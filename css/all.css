@@ -42,12 +42,12 @@ ul{
 a{text-decoration:none;}
 
 a:hover{
-    color:rgba(224, 113, 10, 0.808);
+    color:rgba(255, 245, 236, 0.808);
     background-color:rgb(172, 145, 121);
 }
 
 a:visited{
-    color:rgba(68, 55, 43, 0.808)
+    color:rgba(255, 255, 255, 0.808)
 }
 
 #nowshow nav .nowshow>a{
