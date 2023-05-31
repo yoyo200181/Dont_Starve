@@ -9,7 +9,7 @@ function changemovie(){
 
             for(var j=0 ; j<cinemas[i].movies.length; j++){
                 num=cinemas[i].movies[j].id
-                downlist.innerHTML+="<br><br><p align=left><img src='"+movie[num-1].thumbnail+"' alt='"+movie[num-1].name+"'><form action='ticket.html'><input type='text' id='in"+j+"' Value="+movie[num-1].name+" disabled><br><select id='sel"+j+"'></select><input type='submit' value='buy ticket' id='btn"+j+"' onclick='senddata("+j+")'></form></p><br><br>";
+                downlist.innerHTML+="<br><br><p align=left><img src='"+recipe[num-1].thumbnail+"' alt='"+recipe[num-1].name+"'><form action='ticket.html'><input type='text' id='in"+j+"' Value="+recipe[num-1].name+" disabled><br><select id='sel"+j+"'></select><input type='submit' value='buy ticket' id='btn"+j+"' onclick='senddata("+j+")'></form></p><br><br>";
                 for(var k=0; k<cinemas[i].movies[j].shows.length; k++){
                     document.getElementById('sel'+j).innerHTML+="<option value='"+cinemas[i].movies[j].shows[k].index+"'>"+cinemas[i].movies[j].shows[k].datetime+" - House"+cinemas[i].movies[j].shows[k].house+"</option>";
                 }
