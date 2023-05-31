@@ -9,7 +9,7 @@ header{
     border-radius:10px;
     font-family: 'Grandstander', cursive;
     font-size:18px;
-    width:70%
+    width:80%
 }
 
 .icon{
@@ -26,12 +26,12 @@ nav{
     background-color:rgb(150, 99, 51);
     border-style:outset;
     border-radius:10px;
-    width:70%
+    width:80%
 }
 
 ul{
     list-style:none;
-    font-size:12px;
+    font-size:16px;
 }
 
 li{
