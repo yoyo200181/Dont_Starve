@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/recipe.js"></script>
+    <script type="text/javascript" src="js/cinemas.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript">
+        var cinemas=getCinemas();
+        var recipe=getRecipe();
+    </script>
+    <style>
+        p{
+            width:400px;
+            border:1px;
+        }
+
+
+        div img{
+            width:200px;
+            height:200px;
+        }
+
+        
+
+        form{
+            float:left;
+            text-align:left;
+        }
+
+        p img{
+            float:left;
+            width:80px;
+            height:70px;
+            margin-right:5px;
+        }
+    </style>
+    
+    <title>Home</title>
+</head>
+
+<body id="nowshow">
+    <header align=center>
+        <img src="images/logo.jpeg" alt="my logo" class="icon">
+        <h1>Don't Strave Together</h1>
+    </header>
+    
+    
+    <nav>
+        <ul>
+        <li class="index"><a href="index.html" >食譜</a></li>
+        <li class="#"><a href="#">未有</a></li>
+        <li class="#"><a href="#">未有</a></li>
+        </ul>
+    </nav>
+<br>
+
+<main>
+    <div align="center">
+        <span>
+            <label for="select">Select Cinema:</label>
+            <select id="selcinema" onchange="changemovie()">
+                <script type="text/javascript">
+                    cinemalist();
+                </script>
+            </select>
+        </span>
+
+        <br><br>
+        <span id=down>
+            <script type="text/javascript">
+                changemovie();
+            </script>
+        </span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div align=center>
+        <h2>Cinema Locations</h2><br>
+        <img src="images/apm.jpeg" alt="New Earth Cinema - Moon Walk"><br>
+        <b>New Earth Cinema - Moon Walk</b><br>
+        Shop No. L4-1, Level 4, apm,<br>
+        Millennium City 5, 418 Kwun Tong Road,<br>
+        Kwun Tong, Hong Kong<br><br><br>
+        
+        <img src="images/tko.jpeg" alt="New Earth Cinema - Mars Adventure"><br>
+        <b>New Earth Cinema - Mars Adventure</b><br>
+        Shop No. 142, 1/F, PopCorn,<br>
+        9 Tong Yin Street,<br>
+        Tseung Kwan O, Hong Kong<br><br><br>
+
+        <img src="images/mk.jpeg" alt="New Earth Cinema - Earth Revolution"><br>
+        <b>New Earth Cinema - Earth Revolution</b><br>
+        Shop No. 20, Level 6, Langham Place<br>
+        8 Argyle Street,<br>
+        Mong Kok, Hong Kong<br><br><br>
+        
+
+    </div>
+
+
+</main>
+
+<br>
+
+<footer align=center>
+    @Copyright of resources belong to corresponding copyright owners 
+    <br>- fair use for education purpose |  <a href="index.html">Home</a>
+</footer>
+
+</body>
+</html>
