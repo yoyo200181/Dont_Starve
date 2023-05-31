@@ -31,11 +31,11 @@ nav{
 
 ul{
     list-style:none;
-    font-size:16px;
 }
 
 li{
     display: inline;
+    font-size:2px;
 }
 
 
