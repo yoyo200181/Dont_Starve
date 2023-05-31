@@ -1,0 +1,87 @@
+body{
+    background:-webkit-linear-gradient(rgb(212, 192, 173),white);
+    font-family: 'Itim', cursive;
+}
+
+header{
+    background-color:rgb(150, 99, 51);
+    border-radius:10px;
+    font-family: 'Grandstander', cursive;
+    font-size:20px;
+}
+
+.icon{
+    width:150px;
+    height:84px;
+
+}
+
+
+
+nav{
+    position:fixed;
+    right:3%;
+    top:140px;
+    background-color:rgb(150, 99, 51);
+    width:180px;
+    border-style:outset;
+    border-radius:10px;
+ 
+}
+
+ul{
+    list-style:none;
+    }
+
+
+    main img{
+        width:80px;
+        height:70px;
+    }
+
+a{text-decoration:none;}
+
+a:hover{
+    color:rgba(224, 113, 10, 0.808);
+    background-color:rgb(172, 145, 121);
+}
+
+a:visited{
+    color:rgba(68, 55, 43, 0.808)
+}
+
+#nowshow nav .nowshow>a{
+    pointer-events:none;
+    cursor:default;
+}
+
+#index nav .index>a{
+    pointer-events:none;
+    cursor:default;
+}
+
+
+#ticket nav .ticket>a{
+    pointer-events:none;
+    cursor:default;
+}
+
+.left{
+    font-style:bold;
+    float:left;
+    width:80px;
+}
+
+.up{
+    font-style:bold;
+    width:100px;
+}
+
+.short{
+    width:27px;
+    margin:3px;
+}
+
+.mid{
+    width:60px;
+}
