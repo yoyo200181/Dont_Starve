@@ -9,6 +9,7 @@ header{
     border-radius:10px;
     font-family: 'Grandstander', cursive;
     font-size:20px;
+    width:100%
 }
 
 .icon{
@@ -25,11 +26,13 @@ nav{
     background-color:rgb(150, 99, 51);
     border-style:outset;
     border-radius:10px;
+    width:100%
  
 }
 
 ul{
     list-style:none;
+    display: inline;
     }
 
 
