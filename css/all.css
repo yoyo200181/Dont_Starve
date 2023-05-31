@@ -4,6 +4,7 @@ body{
 }
 
 header{
+    position:fixed;
     background-color:rgb(150, 99, 51);
     border-radius:10px;
     font-family: 'Grandstander', cursive;
@@ -20,10 +21,8 @@ header{
 
 nav{
     position:fixed;
-    right:3%;
-    top:140px;
+    top:100px;
     background-color:rgb(150, 99, 51);
-    width:180px;
     border-style:outset;
     border-radius:10px;
  
