@@ -1,95 +1,30 @@
 function getCinemas() {
     return [
         {
-            branchName:"New Earth Cinema - Moon Walk",
-            movies:[
-                {   id:2,
-                    shows:[
-                    {   
-                        index:1,
-                        datetime:"19 March, Tue - 9:00 AM",
-                        house:1            
-                    },
-                    {   
-                        index:2,
-                        datetime:"19 March, Tue - 12:00 PM",
-                        house:3            
-                    },
-                    {   
-                        index:3,
-                        datetime:"19 March, Tue - 3:00 PM",
-                        house:3            
-                    },
-                    {   
-                        index:4,
-                        datetime:"20 March, Wed - 9:00 AM",
-                        house:1       
-                    },
-                    {   
-                        index:5,
-                        datetime:"20 March, Wed - 12:00 PM",
-                        house:3            
-                    }
-                    ]
+            branchName:"蔬菜類",
+            food:[
+                {   id:1,
+                    name:"月亮蘑菇",
+                    weight:0.5,
+                    
+                },
+                {   
+                    id:2,
+                    name:"紅蘑菇",
+                    weight:0.5,
                 },
                 {   id:3,
-                    shows:[
-                    {   
-                        index:6,
-                        datetime:"19 March, Tue - 10:00 AM",
-                        house:2            
-                    },
-                    {   
-                        index:7,
-                        datetime:"19 March, Tue - 4:00 PM",
-                        house:5            
-                    },
-                    {   
-                        index:8,
-                        datetime:"19 March, Tue - 7:00 PM",
-                        house:4            
-                    },
-                    {   
-                        index:9,
-                        datetime:"20 March, Wed - 10:00 AM",
-                        house:2            
-                    },
-                    {   
-                        index:10,
-                        datetime:"20 March, Wed - 4:00 PM",
-                        house:5            
-                    }
-                    ]
+                    name:"綠蘑菇",
+                    weight:0.5,
                 },
                 {   id:4,
-                    shows:[
-                    {   
-                        index:11,
-                        datetime:"19 March, Tue - 8:00 AM",
-                        house:2            
-                    },
-                    {   
-                        index:12,
-                        datetime:"19 March, Tue - 12:00 PM",
-                        house:5            
-                    },
-                    {   
-                        index:13,
-                        datetime:"19 March, Tue - 9:00 PM",
-                        house:1            
-                    },
-                    {   
-                        index:14,
-                        datetime:"20 March, Wed - 8:00 AM",
-                        house:2            
-                    },
-                    {   
-                        index:15,
-                        datetime:"20 March, Wed - 12:00 PM",
-                        house:5            
-                    }
-                    ]
-                }
+                    name:"藍蘑菇",
+                    weight:0.5,
+                },
+                {   id:5,
+                    name:"胡蘿蔔",
+                    weight:0.5,
+                },
             ]
         },
         {

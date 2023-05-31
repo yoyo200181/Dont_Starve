@@ -1,6 +1,6 @@
 
 
-function changemovie(){
+function changerecipe(){
     var mysel = document.getElementById("selcinema").value;
     var downlist=document.getElementById('down');
     downlist.innerHTML=""
