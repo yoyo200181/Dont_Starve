@@ -8,8 +8,8 @@ header{
     background-color:rgb(150, 99, 51);
     border-radius:10px;
     font-family: 'Grandstander', cursive;
-    font-size:18px;
-    width:98%
+    font-size:20px;
+    width:100%
 }
 
 .icon{
@@ -22,11 +22,12 @@ header{
 
 nav{
     position:fixed;
-    top:110px;
+    top:100px;
     background-color:rgb(150, 99, 51);
     border-style:outset;
     border-radius:10px;
-    width:98%
+    width:100%
+ 
 }
 
 ul{
@@ -35,7 +36,6 @@ ul{
 
 li{
     display: inline;
-    font-size:18px;
 }
 
 
@@ -59,21 +59,12 @@ a:visited{
     color:rgba(255, 255, 255, 0.808)
 }
 
-#nowshow nav .nowshow>a{
-    pointer-events:none;
-    cursor:default;
-}
 
 #index nav .index>a{
     pointer-events:none;
     cursor:default;
 }
 
-
-#ticket nav .ticket>a{
-    pointer-events:none;
-    cursor:default;
-}
 
 .left{
     font-style:bold;
