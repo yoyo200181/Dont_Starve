@@ -4,31 +4,31 @@ function getFood() {
             type:"蔬菜",
             Ingredients:[
                 {
-                    id:1,
+                    id:0,
                     weight:0.5,
                     ingre:[
                         {
-                            index:1,
+                            index:0,
                             name:"紅蘑菇"
                         },
                         {
-                            index:2,
+                            index:1,
                             name:"綠蘑菇"
                         },
                         {
-                            index:3,
+                            index:2,
                             name:"藍蘑菇"
                         },
                         {
-                            index:4,
+                            index:3,
                             name:"月亮蘑菇"
                         },
                         {
-                            index:5,
+                            index:4,
                             name:"仙人掌花"
                         },
                         {
-                            index:6,
+                            index:5,
                             name:"海帶"
                         }
 
@@ -37,71 +37,71 @@ function getFood() {
                     
                 },
                 {
-                    id:2,
+                    id:1,
                     weight:1,
                     ingre:[
                         {
-                            index:5,
+                            index:0,
                             name:"胡蘿蔔"
                         },
                         {
-                            index:6,
+                            index:1,
                             name:"番茄"
                         },
                         {
-                            index:7,
+                            index:2,
                             name:"土豆"
                         },
                         {
-                            index:8,
+                            index:3,
                             name:"洋蔥"
                         },
                         {
-                            index:9,
+                            index:4,
                             name:"大蒜"
                         },
                         {
-                            index:10,
+                            index:5,
                             name:"辣椒"
                         },
                         {
-                            index:11,
+                            index:6,
                             name:"蘆筍"
                         },
                         {
-                            index:12,
+                            index:7,
                             name:"南瓜"
                         },
                         {
-                            index:13,
+                            index:8,
                             name:"玉米"
                         },
                         {
-                            index:14,
+                            index:9,
                             name:"仙人掌"
                         },
                         {
-                            index:15,
+                            index:10,
                             name:"曼德拉草"
                         },
                         {
-                            index:16,
+                            index:11,
                             name:"茄子"
                         },
                         {
-                            index:16,
+                            index:12,
                             name:"苔蘚"
                         },
                         {
-                            index:16,
+                            index:13,
                             name:"石果"
                         },
                         {
-                            index:16,
+                            index:14,
                             name:"爆米花魚"
                         },
                         {
-                            index:16,
+                            index:15,
                             name:"玉米鱈魚"
                         },
 
@@ -115,23 +115,23 @@ function getFood() {
             type:"水果",
             Ingredients:[
                 {
-                    id:3,
+                    id:0,
                     weight:0.5,
                     ingre:[
                         {
-                            index:15,
+                            index:0,
                             name:"漿果"
                         },
                         {
-                            index:16,
+                            index:1,
                             name:"多汁漿果"
                         },
                         {
-                            index:17,
+                            index:2,
                             name:"小發光漿果"
                         },
                         {
-                            index:18,
+                            index:3,
                             name:"無花果"
                         }
 
@@ -139,31 +139,31 @@ function getFood() {
                     ingre_re:[]
                 },
                 {
-                    id:4,
+                    id:1,
                     weight:1,
                     ingre:[
                         {
-                            index:19,
+                            index:0,
                             name:"石榴"
                         },
                         {
-                            index:20,
+                            index:1,
                             name:"西瓜"
                         },
                         {
-                            index:21,
+                            index:2,
                             name:"火龍果"
                         },
                         {
-                            index:22,
+                            index:3,
                             name:"香蕉"
                         },
                         {
-                            index:23,
+                            index:4,
                             name:"大發光漿果"
                         },
                         {
-                            index:23,
+                            index:5,
                             name:"榴槤"
                         }
                     ],
@@ -176,12 +176,14 @@ function getFood() {
             type:"肉",
             Ingredients:[
                 {
-                    id:5,
+                    id:0,
                     weight:0.25,
                     ingre:[],
                     ingre_re:[
                         {
-                            index:24,
+                            type_id:3,
+                            id:0,
+                            index:0,
                             name:"藤壺"
                         }
                      
@@ -189,27 +191,27 @@ function getFood() {
 
                 },
                 {
-                    id:5,
+                    id:1,
                     weight:0.5,
                     ingre:[
                         {
-                            index:24,
+                            index:0,
                             name:"小肉"
                         },
                         {
-                            index:25,
+                            index:1,
                             name:"蛙腿"
                         },
                         {
-                            index:26,
+                            index:2,
                             name:"雞腿"
                         },
                         {
-                            index:27,
+                            index:3,
                             name:"蝙蝠翅膀"
                         },
                         {
-                            index:28,
+                            index:4,
                             name:"裸露鼻孔"
                         }
 
@@ -218,47 +220,69 @@ function getFood() {
                     ingre_re:[
                         
                         {
-                            index:28,
+                            type_id:3,
+                            id:1,
+                            index:0,
                             name:"淡水魚"
                         },
                         {
-                            index:28,
+                            type_id:0,
+                            id:1,
+                            index:1,
                             name:"小魚塊"
                         },
                         {
-                            index:28,
+                            type_id:3,
+                            id:2,
+                            index:3,
                             name:"鰻魚"
                         },
                         {
-                            index:28,
+                            type_id:3,
+                            id:1,
+                            index:2,
                             name:"小孔雀魚"
                         },
                         {
-                            index:28,
+                            type_id:3,
+                            id:1,
+                            index:3,
                             name:"針鼻噴墨魚"
                         },
                         {
-                            index:28,
+                            type_id:3,
+                            id:1,
+                            index:4,
                             name:"小餌魚"
                         },
                         {
-                            index:28,
+                            type_id:3,
+                            id:1,
+                            index:5,
                             name:"三文魚苗"
                         },
                         {
-                            index:28,
+                            type_id:3,
+                            id:1,
+                            index:6,
                             name:"落葉比目魚"
                         },
                         {
-                            index:28,
+                            type_id:3,
+                            id:1,
+                            index:7,
                             name:"花朵金槍魚"
                         },
                         {
-                            index:28,
+                            type_id:3,
+                            id:1,
+                            index:8,
                             name:"熾熱太陽魚"
                         },
                         {
-                            index:28,
+                            type_id:3,
+                            id:1,
+                            index:9,
                             name:"口水魚"
                         },
 
@@ -267,27 +291,27 @@ function getFood() {
 
                 },
                 {
-                    id:6,
+                    id:2,
                     weight:1,
                     ingre:[
                         {
-                            index:29,
+                            index:0,
                             name:"大肉"
                         },
                         {
-                            index:30,
+                            index:1,
                             name:"怪物肉"
                         },
                         {
-                            index:31,
+                            index:2,
                             name:"葉肉"
                         },
                         {
-                            index:32,
+                            index:3,
                             name:"象鼻"
                         },
                         {
-                            index:34,
+                            index:4,
                             name:"鳥腿"
                         }
                         
@@ -295,7 +319,9 @@ function getFood() {
                     ingre_re:[
                         
                         {
-                            index:33,
+                            type_id:3,
+                            id:2,
+                            index:0,
                             name:"魚"
                         }
                         
@@ -308,11 +334,11 @@ function getFood() {
             type:"海鮮",
             Ingredients:[
                 {
-                    id:5,
+                    id:0,
                     weight:0.25,
                     ingre:[
                         {
-                            index:24,
+                            index:0,
                             name:"藤壺"
                         }
                     ],
@@ -320,47 +346,47 @@ function getFood() {
 
                 },
                 {
-                    id:5,
+                    id:1,
                     weight:0.5,
                     ingre:[
                         {
-                            index:28,
+                            index:0,
                             name:"淡水魚"
                         },
                         {
-                            index:28,
+                            index:1,
                             name:"小魚塊"
                         },
                         {
-                            index:28,
+                            index:2,
                             name:"小孔雀魚"
                         },
                         {
-                            index:28,
+                            index:3,
                             name:"針鼻噴墨魚"
                         },
                         {
-                            index:28,
+                            index:4,
                             name:"小餌魚"
                         },
                         {
-                            index:28,
+                            index:5,
                             name:"三文魚苗"
                         },
                         {
-                            index:28,
+                            index:6,
                             name:"落葉比目魚"
                         },
                         {
-                            index:28,
+                            index:7,
                             name:"花朵金槍魚"
                         },
                         {
-                            index:28,
+                            index:8,
                             name:"熾熱太陽魚"
                         },
                         {
-                            index:28,
+                            index:9,
                             name:"口水魚"
                         }
 
@@ -370,56 +396,56 @@ function getFood() {
 
                 },
                 {
-                    id:6,
+                    id:2,
                     weight:1,
                     ingre:[
  
                         {
-                            index:33,
+                            index:0,
                             name:"魚"
                         },
                         {
-                            index:34,
+                            index:1,
                             name:"生魚肉"
                         },
                         {
-                            index:34,
+                            index:2,
                             name:"生魚肉"
                         },
                         {
-                            index:28,
+                            index:3,
                             name:"鰻魚"
                         },
                         {
-                            index:28,
+                            index:4,
                             name:"龍蝦"
                         },
                         {
-                            index:28,
+                            index:5,
                             name:"泥魚"
                         },
                         {
-                            index:28,
+                            index:6,
                             name:"班魚"
                         },
                         {
-                            index:28,
+                            index:7,
                             name:"浮誇獅子魚"
                         },
                         {
-                            index:28,
+                            index:8,
                             name:"黑鯰魚"
                         },
                         {
-                            index:28,
+                            index:9,
                             name:"金錦鯉"
                         },
                         {
-                            index:28,
+                            index:10,
                             name:"冰鯛魚"
                         },
                         {
-                            index:28,
+                            index:11,
                             name:"甜味魚"
                         }
                         
@@ -440,11 +466,15 @@ function getFood() {
                     ingre_re:[
  
                         {
-                            index:33,
+                            type_id:2,
+                            id:2,
+                            index:1,
                             name:"怪物肉"
                         },
                         {
-                            index:34,
+                            type_id:1,
+                            id:1,
+                            index:5,
                             name:"榴槤"
                         }
                         
@@ -459,12 +489,12 @@ function getFood() {
             Ingredients:[
                 
                 {
-                    id:6,
+                    id:0,
                     weight:1,
                     ingre:[
  
                         {
-                            index:33,
+                            index:0,
                             name:"鳥蛋"
                         }
                         
@@ -473,12 +503,12 @@ function getFood() {
                     
                 },
                 {
-                    id:6,
+                    id:1,
                     weight:4,
                     ingre:[
  
                         {
-                            index:33,
+                            index:0,
                             name:"高腳鳥蛋"
                         }
                         
@@ -494,16 +524,16 @@ function getFood() {
             Ingredients:[
                 
                 {
-                    id:6,
+                    id:0,
                     weight:1,
                     ingre:[
  
                         {
-                            index:33,
+                            index:0,
                             name:"蜂蜜"
                         },
                         {
-                            index:33,
+                            index:1,
                             name:"蜂巢"
                         }
                         
@@ -512,12 +542,12 @@ function getFood() {
                     
                 },
                 {
-                    id:6,
+                    id:1,
                     weight:3,
                     ingre:[
  
                         {
-                            index:33,
+                            index:0,
                             name:"蜂王漿"
                         }
                         
@@ -533,20 +563,20 @@ function getFood() {
             Ingredients:[
                 
                 {
-                    id:6,
+                    id:0,
                     weight:1,
                     ingre:[
  
                         {
-                            index:33,
+                            index:0,
                             name:"黃油"
                         },
                         {
-                            index:33,
+                            index:1,
                             name:"電羊奶"
                         },
                         {
-                            index:33,
+                            index:2,
                             name:"乳白物"
                         }
                         
@@ -556,7 +586,179 @@ function getFood() {
                 }
             ]
         },
-        
+ 
+
+        {
+            type:"不可食用",
+            Ingredients:[
+                
+                {
+                    id:0,
+                    weight:1,
+                    ingre:[
+ 
+                        {
+                            index:0,
+                            name:"伏特羊角"
+                        },
+                        {
+                            index:1,
+                            name:"噩夢燃料"
+                        },
+                        {
+                            index:2,
+                            name:"骨頭碎片"
+                        }
+                        
+                    ],
+                    ingre_re:[
+                        {
+                            index:0,
+                            name:"樹枝"
+                        }
+                    ]
+                    
+                }
+            ]
+        },
+
+        {
+            type:"冰",
+            Ingredients:[
+                
+                {
+                    id:0,
+                    weight:1,
+                    ingre:[
+ 
+                        {
+                            index:0,
+                            name:"冰塊"
+                        }
+                        
+                    ],
+                    ingre_re:[
+                        {
+                            type_id:3,
+                            id:2,
+                            index:10,
+                            name:"冰雕魚"
+                        }
+                    ]
+                    
+                }
+            ]
+        },
+
+        {
+            type:"裝飾",
+            Ingredients:[
+                
+                {
+                    id:0,
+                    weight:1,
+                    ingre:[
+ 
+                        {
+                            index:0,
+                            name:"勿忙我"
+                        }
+                        
+                    ],
+                    ingre_re:[]
+                    
+                },
+                {
+                    id:1,
+                    weight:2,
+                    ingre:[
+
+                        {
+                            index:0,
+                            name:"蝴蝶翅膀"
+                        },
+                        {
+                            index:1,
+                            name:"月娥翅膀"
+                        },
+                        {
+                            index:2,
+                            name:"塵土塊"
+                        }
+                        
+                    ],
+                    ingre_re:[]
+                    
+                }
+            ]
+        },
+
+        {
+            type:"魔法",
+            Ingredients:[
+                
+                {
+                    id:0,
+                    weight:1,
+                    ingre:[],
+                    ingre_re:[
+                        {
+                            type_id:0,
+                            id:1,
+                            index:10,
+                            name:"曼德拉草"
+                        },
+                        {
+                            type_id:8,
+                            id:0,
+                            index:1,
+                            name:"噩夢燃料"
+                        }
+                    ]
+                    
+                }
+            ]
+        },
+
+        {
+            type:"種子",
+            Ingredients:[
+                
+                {
+                    id:0,
+                    weight:1,
+                    ingre:[
+                        {
+                            index:0,
+                            name:"樺栗果"
+                        }
+                    ],
+                    ingre_re:[]
+                    
+                }
+            ]
+        },
+
+        {
+            type:"油脂",
+            Ingredients:[
+                
+                {
+                    id:0,
+                    weight:1,
+                    ingre:[],
+                    ingre_re:[
+                        {
+                            type_id:7,
+                            id:0,
+                            index:0,
+                            name:"黃油"
+                        }
+                    ]
+                    
+                }
+            ]
+        }
 
     ]
 }
