@@ -1,0 +1,199 @@
+function getRecipe() {
+    return [
+        {
+            id:0,
+            img:"0.jpg",
+            name:"鮮果可麗餅",
+            chef:true,
+            hungry:150,
+            blood:60,
+            san:15,
+            time:32,
+            life:10,
+            re_ing:[["",7,0,0],["",6,0,0],["2",1,1,0]],
+            other_ing:[]
+            
+        },
+        {
+            id:1,
+            img:"1.jpg",
+            name:"骨頭湯",
+            chef:true,
+            hungry:150,
+            blood:32,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },
+        {
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },{
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },{
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },{
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },
+        {
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },
+        {
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },
+        {
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },
+        {
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },
+        {
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },
+        {
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },
+        {
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },
+        {
+            id:0,
+            img:".jpg",
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[]
+            
+        },
+
+
+    ]
+}
