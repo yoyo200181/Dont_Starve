@@ -1,3 +1,7 @@
-function printHungry(){
+function change(n){
     
+}
+
+function print(n,m){
+
 }
