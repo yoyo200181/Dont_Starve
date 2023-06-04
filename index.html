@@ -11,8 +11,25 @@
     <script type="text/javascript">
         var food=getFood();
         var recipe=getRecipe();
+        var have_food = [];
     </script>
+    <style>
+        button{
+            background-color: rgb(193, 161, 131);
+            border: 1;
+            border-radius: 8px;
+            width: 58px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0px 0px 0px 1px;
+            cursor: pointer;
+        }
 
+        button:hover{
+            background-color: rgb(192, 151, 112);
+        }
+    </style>
     
     <title>Home</title>
 </head>
@@ -39,6 +56,40 @@
 
     <main>
         <div align="center">
+            <p align="left" style="width:75%; border:1px black solid;">
+                <script type="text/javascript">
+                    print_type();
+                </script>
+                <br>
+                <span id="蔬菜" class="hide">
+                    <label><input id="蔬菜all" name="sel_" type="checkbox" onchange='sel_all("蔬菜")'>"all蔬菜"</label>
+                    <label><input id="蔬菜1" name="蔬菜" type="checkbox" onchange='sel_food("蔬菜1")'>"蔬菜1"</label>
+                    <label><input id="蔬菜2" name="蔬菜" type="checkbox" onchange='sel_food("蔬菜2")'>"蔬菜2"</label>
+
+                </span>
+                <span id="水果" class="hide">
+                    <label><input id="水果all" name="sel_" type="checkbox" onchange='sel_all("水果")'>"all水果"</label>
+                    <input id="水果1" name="水果" type="checkbox" onchange='sel_food("水果1")'>"水果1"
+                    <input id="水果2" name="水果" type="checkbox" onchange='sel_food("水果2")'>"水果2"
+                </span>
+                <span id="肉" class="hide" onchange='sel_food("肉")'>
+                    <label><input id="肉all" name="sel_" type="checkbox" onchange='sel_all("肉")'>"all肉"</label>
+                    <input id="肉1" name="肉" type="checkbox" value="3" onchange='sel_food("肉1")'>"肉1"
+                    <input id="肉2" name="肉" type="checkbox" value="3" onchange='sel_food("肉2")'>"肉2"
+                </span>
+                <br>
+                <input type="checkbox" id="sel_all" onclick='sel_all("sel_")'>全選</button>
+                <button onclick='remove_all()'>remove</button>
+                <button onclick="print_food()">priint</button>
+                <br>
+                <span id="test">
+                    <script>
+                        print_food();
+                    </script>
+                </span>
+                
+            </p>
+
             <span>
                 <table id="t">
                     <tr>

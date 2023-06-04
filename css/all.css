@@ -9,7 +9,7 @@ header{
     border-radius:10px;
     font-family: 'Grandstander', cursive;
     font-size:20px;
-    width:100%
+    width:98%
 }
 
 .icon{
@@ -19,14 +19,13 @@ header{
 }
 
 
-
 nav{
     position:fixed;
     top:100px;
     background-color:rgb(150, 99, 51);
     border-style:outset;
     border-radius:10px;
-    width:100%
+    width:98%
  
 }
 
@@ -85,3 +84,12 @@ a:visited{
 .mid{
     width:60px;
 }
+
+.hide{
+    display:none;
+}
+
+.sel{
+    background-color: rgb(141, 104, 69);
+}
+

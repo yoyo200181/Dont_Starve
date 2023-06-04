@@ -1,0 +1,14 @@
+.hide{
+    display:none;
+}
+
+.sel{
+    background-color: aquamarine;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+span{
+    border:1px solid black;
+}

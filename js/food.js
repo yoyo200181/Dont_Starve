@@ -2,6 +2,8 @@ function getFood() {
     return [
         {
             type:"蔬菜",
+            type_id:0,
+            show:true,
             Ingredients:[
                 {
                     id:0,
@@ -113,6 +115,8 @@ function getFood() {
 
         {
             type:"水果",
+            type_id:1,
+            show:true,
             Ingredients:[
                 {
                     id:0,
@@ -174,6 +178,8 @@ function getFood() {
 
         {
             type:"肉",
+            type_id:2,
+            show:true,
             Ingredients:[
                 {
                     id:0,
@@ -332,6 +338,8 @@ function getFood() {
 
         {
             type:"海鮮",
+            type_id:3,
+            show:true,
             Ingredients:[
                 {
                     id:0,
@@ -457,6 +465,8 @@ function getFood() {
 
         {
             type:"怪物",
+            type_id:4,
+            show:false,
             Ingredients:[
                 
                 {
@@ -486,6 +496,8 @@ function getFood() {
 
         {
             type:"蛋",
+            type_id:5,
+            show:true,
             Ingredients:[
                 
                 {
@@ -521,6 +533,8 @@ function getFood() {
 
         {
             type:"蜂蜜",
+            type_id:6,
+            show:true,
             Ingredients:[
                 
                 {
@@ -560,6 +574,8 @@ function getFood() {
 
         {
             type:"奶製品",
+            type_id:7,
+            show:true,
             Ingredients:[
                 
                 {
@@ -590,6 +606,8 @@ function getFood() {
 
         {
             type:"不可食用",
+            type_id:8,
+            show:false,
             Ingredients:[
                 
                 {
@@ -599,24 +617,23 @@ function getFood() {
  
                         {
                             index:0,
-                            name:"伏特羊角"
+                            name:"樹枝"
                         },
                         {
                             index:1,
-                            name:"噩夢燃料"
+                            name:"伏特羊角"
                         },
                         {
                             index:2,
+                            name:"噩夢燃料"
+                        },
+                        {
+                            index:3,
                             name:"骨頭碎片"
                         }
                         
                     ],
-                    ingre_re:[
-                        {
-                            index:0,
-                            name:"樹枝"
-                        }
-                    ]
+                    ingre_re:[]
                     
                 }
             ]
@@ -624,6 +641,8 @@ function getFood() {
 
         {
             type:"冰",
+            type_id:9,
+            show:false,
             Ingredients:[
                 
                 {
@@ -652,6 +671,8 @@ function getFood() {
 
         {
             type:"裝飾",
+            type_id:10,
+            show:false,
             Ingredients:[
                 
                 {
@@ -695,6 +716,8 @@ function getFood() {
 
         {
             type:"魔法",
+            type_id:11,
+            show:false,
             Ingredients:[
                 
                 {
@@ -722,6 +745,8 @@ function getFood() {
 
         {
             type:"種子",
+            type_id:12,
+            show:false,
             Ingredients:[
                 
                 {
@@ -741,6 +766,8 @@ function getFood() {
 
         {
             type:"油脂",
+            type_id:13,
+            show:false,
             Ingredients:[
                 
                 {
