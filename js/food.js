@@ -219,6 +219,10 @@ function getFood() {
                         {
                             index:4,
                             name:"裸露鼻孔"
+                        },
+                        {
+                            index:5,
+                            name:"鼴鼠"
                         }
 
                     ],
