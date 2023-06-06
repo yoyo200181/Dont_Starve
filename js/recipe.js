@@ -286,11 +286,9 @@ function getRecipe() {
             san:5,
             time:32,
             life:10,
-            re_ing:[[1,8,0,0]],
-            other_ing:[[0.25,3,null]],
-            intro:"",
-            must_not:[],
-            special:""
+            re_ing:[[8,0,0,null]],
+            other_ing:[[3,null,null],[0,null,null]],
+            intro:"魚 + 樹枝 + 2其他"
             
         },
         {
@@ -302,11 +300,9 @@ function getRecipe() {
             san:5,
             time:16,
             life:20,
-            re_ing:[[1,5,0,0]],
-            other_ing:[[0.25,2,null],[0.5,0,null]],
-            intro:"",
-            must_not:["不可食用度","辣椒"],
-            special:""
+            re_ing:[[5,0,0,null]],
+            other_ing:[[2,null,null],[0,null,null]],
+            intro:"鳥度≥1 + 蔬菜度≥0.5 + 肉度≥0.25 + 填充物<br><font>禁忌:</font> 不可食用度、辣椒"
             
         },
         {
@@ -318,11 +314,9 @@ function getRecipe() {
             san:33,
             time:32,
             life:6,
-            re_ing:[[1,2,2,2],[1,0,1,3]],
-            other_ing:[[2,0,null]],
-            intro:"",
-            must_not:[],
-            special:""
+            re_ing:[[2,2,2,null],[0,1,3,null]],
+            other_ing:[],
+            intro:"葉肉 + 洋蔥 + 蔬菜度≥2"
             
         },
         {
@@ -334,11 +328,9 @@ function getRecipe() {
             san:5,
             time:32,
             life:15,
-            re_ing:[[1,2,1,1]],
-            other_ing:[[0.5,0,null]],
-            intro:"",
-            must_not:[],
-            special:""
+            re_ing:[[2,1,1,null]],
+            other_ing:[[0,null,null]],
+            intro:"蛙腿 + 蔬菜度≥0.5 + 2填充物"
             
         },
         {
@@ -351,10 +343,8 @@ function getRecipe() {
             time:8,
             life:10,
             re_ing:[],
-            other_ing:[[1.5,2,null],[1.5,0,null]],
-            intro:"",
-            must_not:[],
-            special:"食用後15秒增加40溫度"
+            other_ing:[[2,2,null],[0,1,null]],
+            intro:"肉≥1.5+菜≥1.5<br><font>特效:</font> 食用後15秒增加40溫度"
             
         },
         {
@@ -366,11 +356,9 @@ function getRecipe() {
             san:5,
             time:8,
             life:6,
-            re_ing:[[1,0,1,8]],
-            other_ing:[[0.25,3,null]],
-            intro:"",
-            must_not:[],
-            special:""
+            re_ing:[[0,1,8,[[0,1,14],[0,1,15]]]],
+            other_ing:[[3,null,null]],
+            intro:"玉米/爆米花魚/玉米鱈魚 + 魚度≥0.25 + 2填充物"
             
         },
         {
@@ -382,12 +370,9 @@ function getRecipe() {
             san:0,
             time:8,
             life:10,
-            re_ing:[[1,2,1,5],[1,0,1,9]],
+            re_ing:[[2,1,5,null],[0,1,9,[[0,1,13]]]],
             other_ing:[],
-            intro:"",
-            must_not:["水果度"],
-            special:""
-            
+            intro:"鼴鼠 + 石果/仙人掌肉 + 2填充物<br><font>禁忌:</font> 水果度"
         },
         {
             id:27,
@@ -398,11 +383,9 @@ function getRecipe() {
             san:15,
             time:32,
             life:10,
-            re_ing:[[2,0,1,2],[1,5,0,0]],
+            re_ing:[[0,1,2,null],[5,0,0,null]],
             other_ing:[],
-            intro:"",
-            must_not:["肉度","不可食用度"],
-            special:""
+            intro:"2土豆 + 1蛋 + 1其他<br><font>禁忌:</font> 肉度、不可食用度"
             
         },
         {
@@ -414,11 +397,9 @@ function getRecipe() {
             san:5,
             time:32,
             life:15,
-            re_ing:[[1,6,0,0]],
-            other_ing:[[0.25,2,null]],
-            intro:"",
-            must_not:["不可食用度","肉≤1.5"],
-            special:""
+            re_ing:[[6,0,0,null]],
+            other_ing:[[2,null,null]],
+            intro:"蜂蜜 + 肉度≥0.25<br><font>禁忌:</font> 不可食用度、肉>1.5"
             
         },
         {
@@ -430,28 +411,248 @@ function getRecipe() {
             san:-10,
             time:32,
             life:8,
-            re_ing:[[2,2,1,1]],
-            other_ing:[[1,3,null]],
-            intro:"",
-            must_not:["不可食用度"],
-            special:"潮濕免疫5分鐘"
+            re_ing:[[2,1,1,null]],
+            other_ing:[[3,1,[3,2]]],
+            intro:"2蛙腿 + 魚度≥1<br><font>特效:</font> 潮濕免疫5分鐘<br><font>禁忌:</font> 不可食用度"
             
         },
         {
             id:30,
             name:"蝴蝶鬆餅",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:37.5,
+            blood:20,
             san:5,
             time:32,
+            life:15,
+            re_ing:[[10,1,0,[10,1,1]]],
+            other_ing:[0,null,null],
+            intro:"蝴蝶翅膀/月娥翅膀 + 蔬菜 + 2其他<br><font>禁忌:</font> 肉度"
+            
+        },
+        {
+            id:31,
+            name:"燉兔子",
+            chef:false,
+            hungry:37.5,
+            blood:20,
+            san:5,
+            time:10,
+            life:10,
+            re_ing:[[9,0,0,null]],
+            other_ing:[[2,1,[2,0]]],
+            intro:"肉度≥0.5 + 2冰塊<br><font>特效:</font> 食用後5秒增加40溫度<br><font>禁忌:</font> 肉度≥0.75、不可食用度"
+
+        },
+        {
+            id:32,
+            name:"藤壺皮塔餅",
+            chef:false,
+            hungry:37.5,
+            blood:20,
+            san:5,
+            time:32,
+            life:15,
+            re_ing:[3,0,0,null],
+            other_ing:[0,null,null],
+            intro:"藤壺 + 蔬菜 + 2填充物"
+
+        },
+        {
+            id:33,
+            name:"加州卷",
+            chef:false,
+            hungry:37.5,
+            blood:20,
+            san:10,
+            time:8,
+            life:10,
+            re_ing:[[0,0,5,null]],
+            other_ing:[[3,1,[3,2]]],
+            intro:"2海帶 + 魚度≥1<br><font>禁忌:</font> 海帶>2"
+
+        },
+        {
+            id:34,
+            name:"奶油土豆泥",
+            chef:false,
+            hungry:37.5,
+            blood:20,
+            san:33,
+            time:16,
+            life:15,
+            re_ing:[[0,1,2,null],[0,1,4,null]],
+            other_ing:[],
+            intro:"2土豆 + 1大蒜<br><font>禁忌:</font> 肉度、不可食用度"
+
+        },
+        {
+            id:35,
+            name:"葉肉糕",
+            chef:false,
+            hungry:37.5,
+            blood:8,
+            san:5,
+            time:32,
+            life:20,
+            re_ing:[2,2,2,null],
+            other_ing:[],
+            intro:"2葉肉 + 2其他"
+
+        },
+        {
+            id:36,
+            name:"肉串",
+            chef:false,
+            hungry:37.5,
+            blood:3,
+            san:5,
+            time:32,
+            life:15,
+            re_ing:[[8,0,0,null]],
+            other_ing:[2,null,null],
+            intro:"樹枝 + 肉度≥0.25<br><font>特效:</font> 食用後15秒增加40溫度<br><font>禁忌:</font> 怪物度>1、不可食用度>1"
+
+        },
+        {
+            id:37,
+            name:"花式迴旋塊莖",
+            chef:false,
+            hungry:37.5,
+            blood:3,
+            san:15,
+            time:12,
+            life:10,
+            re_ing:[[0,1,2,null],[8,0,0,null]],
+            other_ing:[],
+            intro:"土豆 + 樹枝<br><font>禁忌:</font> 肉度、怪物度>1、不可食用度>2"
+
+        },
+        {
+            id:38,
+            name:"伏特羊肉凍",
+            chef:true,
+            hungry:37.5,
+            blood:3,
+            san:10,
+            time:32,
+            life:10,
+            re_ing:[[8,0,1,null]],
+            other_ing:[[6,null,null]],
+            intro:"伏特羊角 + 蜂蜜度≥2<br><font>特效:</font> 5分鐘攻擊造成x1.5倍電流傷害(目標潮濕時x2.5倍)<br><font>禁忌:</font> 肉度"
+
+        },
+        {
+            id:39,
+            name:"果醬",
+            chef:false,
+            hungry:37.5,
+            blood:3,
+            san:5,
+            time:8,
+            life:15,
+            re_ing:[],
+            other_ing:[[1,null,null]],
+            intro:"4水果"
+
+        },
+        {
+            id:40,
+            name:"發光漿果慕斯",
+            chef:true,
+            hungry:37.5,
+            blood:3,
+            san:10,
+            time:16,
+            life:8,
+            re_ing:[[1,0,2,[[1,1,4]]]],
+            other_ing:[],
+            intro:"發光漿果/2小發光漿果 + 水果度≥2<br><font>特效:</font> 人物食用後發光2天<br><font>禁忌:</font> 肉度、不可食用度"
+
+        },
+        {
+            id:41,
+            name:"釀茄子",
+            chef:false,
+            hungry:37.5,
+            blood:3,
+            san:5,
+            time:32,
+            life:15,
+            re_ing:[[0,1,11,null]],
+            other_ing:[],
+            intro:"茄子≥1 + 蔬菜≥1.5<br><font>特效:</font> 食用後5秒增加40溫度"
+
+        },
+        {
+            id:42,
+            name:"南瓜餅",
+            chef:false,
+            hungry:37.5,
+            blood:0,
+            san:15,
+            time:32,
+            life:10,
+            re_ing:[[0,1,7,null]],
+            other_ing:[[6,null,null]],
+            intro:"南瓜≥1 + 蜂蜜度≥2"
+
+        },
+        {
+            id:43,
+            name:"怪物千層餅",
+            chef:false,
+            hungry:37.5,
+            blood:-20,
+            san:-20,
+            time:8,
+            life:6,
+            re_ing:[[2,2,1]],
+            other_ing:[],
+            intro:"2怪度肉 + 2其他<br><font>禁忌:</font> 不可食用度"
+
+        },
+        {
+            id:44,
+            name:"龍蝦湯",
+            chef:false,
+            hungry:25,
+            blood:60,
+            san:10,
+            time:8,
+            life:10,
+            re_ing:[[3,2,4,null],[9,0,0,null]],
+            other_ing:[],
+            intro:"龍蝦 + 冰塊 + 2其他"
+
+        },
+        {
+            id:45,
+            name:"爆炒填餡辣椒",
+            chef:false,
+            hungry:25,
+            blood:30,
+            san:-5,
+            time:32,
+            life:15,
+            re_ing:[[0,1,5,null]],
+            other_ing:[[2,null,null]],
+            intro:"辣椒 + 肉≤1.5<br><font>特效:</font> 食用後15秒增加40溫度<br><font>禁忌:</font> 不可食用度"
+
+        },
+        {
+            id:46,
+            name:"酸橘汁醃魚",
+            chef:false,
+            hungry:25,
+            blood:20,
+            san:5,
+            time:8,
             life:10,
             re_ing:[],
             other_ing:[],
-            intro:"",
-            must_not:[],
-            special:""
-            
+            intro:"魚度≥2 + 冰<br><font>特效:</font> 食用後10秒降低40溫度<br><font>禁忌:</font> 蛋度、不可食用度"
+
         },
         {
             id:0,
@@ -464,11 +665,443 @@ function getRecipe() {
             life:10,
             re_ing:[],
             other_ing:[],
-            intro:"",
-            must_not:[],
-            special:""
+            intro:""
 
         },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        },
+        {
+            id:0,
+            name:"",
+            chef:false,
+            hungry:0,
+            blood:0,
+            san:5,
+            time:32,
+            life:10,
+            re_ing:[],
+            other_ing:[],
+            intro:""
+
+        }
             
 
 
