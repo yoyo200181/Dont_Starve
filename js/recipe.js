@@ -649,23 +649,23 @@ function getRecipe() {
             san:5,
             time:8,
             life:10,
-            re_ing:[],
-            other_ing:[],
+            re_ing:[[9,0,0,null]],
+            other_ing:[[3,2,null]],
             intro:"魚度≥2 + 冰<br><font>特效:</font> 食用後10秒降低40溫度<br><font>禁忌:</font> 蛋度、不可食用度"
 
         },
         {
-            id:0,
-            name:"",
+            id:47,
+            name:"無花果烤串",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            hungry:25,
+            blood:20,
+            san:15,
+            time:16,
+            life:15,
+            re_ing:[[1,0,3,null],[8,0,0,null]],
             other_ing:[],
-            intro:""
+            intro:"無花果 + 樹枝≥1 + 肉度≥1"
 
         },
         {
