@@ -351,7 +351,8 @@ function getFood() {
                     ingre:[
                         {
                             index:0,
-                            name:"藤壺"
+                            name:"藤壺",
+                            repaet:true
                         }
                     ],
                     ingre_re:[]
@@ -363,15 +364,18 @@ function getFood() {
                     ingre:[
                         {
                             index:0,
-                            name:"淡水魚"
+                            name:"淡水魚",
+                            repaet:true
                         },
                         {
                             index:1,
-                            name:"小魚塊"
+                            name:"小魚塊",
+                            repaet:true
                         },
                         {
                             index:2,
-                            name:"小孔雀魚"
+                            name:"小孔雀魚",
+                            repaet:true
                         },
                         {
                             index:3,
@@ -611,7 +615,7 @@ function getFood() {
         {
             type:"不可食用",
             type_id:8,
-            show:false,
+            show:true,
             Ingredients:[
                 
                 {
@@ -646,7 +650,7 @@ function getFood() {
         {
             type:"冰",
             type_id:9,
-            show:false,
+            show:true,
             Ingredients:[
                 
                 {
@@ -676,7 +680,7 @@ function getFood() {
         {
             type:"裝飾",
             type_id:10,
-            show:false,
+            show:true,
             Ingredients:[
                 
                 {
@@ -750,7 +754,7 @@ function getFood() {
         {
             type:"種子",
             type_id:12,
-            show:false,
+            show:true,
             Ingredients:[
                 
                 {
