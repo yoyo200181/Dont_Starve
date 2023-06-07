@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="js/food.js"></script>
+    <script type="text/javascript">
+        var food=getFood();
+        var have_food = [];
+        for (var i=0; i<food.length; i++){
+            have_food.push([]);
+            for (var j=0; j<food[i].Ingredients.length;j++){
+                have_food[i].push([]);
+            }
+        }
+    </script>
+    
+    <title>Test</title>
+</head>
+
+<body id="index">
+    
+
+    <main>
+        
+        <div id="test">
+            
+        </div>
+        <script>
+            
+            print_test(have_food.length);
+            for (var i=0; i<food.length; i++){
+                print_test(have_food[i].length);
+            }
+            
+
+        </script>
+        <br>
+        <br>
+        <br>
+
+
+
+    </main>
+
+
+</body>
+</html>

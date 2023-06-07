@@ -31,17 +31,23 @@ function print_type_item(){
     }
 }
 
-function sel_food(n){
+function print_choice(){
+    
+}
 
-    if(document.getElementById(n).checked){
+
+function sel_food(n){
+    
+    var foodName = food[n[0]].Ingredients[n[1]].ingre[n[2]].name;
+    if(document.getElementById(foodName).checked){
         
-        if(!have_food.includes(n)){
-            have_food.push(n);
+        if(!have_food[n[0]][n[1]].includes(foodName)){
+            have_food[n[0]][n[1]].push(foodName);
         }
     }else {
-        if(have_food.includes(n)){
-            var index = have_food.indexOf(n);
-            have_food.splice(index,1);
+        if(have_food[n[0]][n[1]].includes(foodName)){
+            var index = have_food[n[0]][n[1]].indexOf(n);
+            have_food[n[0]][n[1]].splice(index,1);
 
         }
     }
@@ -58,7 +64,7 @@ function sel_all(n){
 }
 
 function print_food(){
-    document.getElementById("test").innerHTML = have_food;
+    document.getElementById("test").innerHTML = have_food[0][0];
 }
 
 function remove_all(){
@@ -66,4 +72,8 @@ function remove_all(){
     checkbox.checked = false;
     checkbox.onchange(sel_all("sel_"));
 
+}
+
+function isEmpty(array) {
+    return Array.isArray(array) && (array.length == 0 || array.every(isEmpty));
 }

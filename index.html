@@ -12,6 +12,12 @@
         var food=getFood();
         var recipe=getRecipe();
         var have_food = [];
+        for (var i=0; i<food.length; i++){
+            have_food.push([]);
+            for (var j=0; j<food[i].Ingredients.length;j++){
+                have_food[i].push([]);
+            }
+        }
     </script>
     <style>
         button{
@@ -63,8 +69,8 @@
                 <br>
                 <span id="蔬菜" class="hide">
                     <label><input id="蔬菜all" name="sel_" type="checkbox" onchange='sel_all("蔬菜")'>"all蔬菜"</label>
-                    <label><input id="蔬菜1" name="蔬菜" type="checkbox" onchange='sel_food("蔬菜1")'>"蔬菜1"</label>
-                    <label><input id="蔬菜2" name="蔬菜" type="checkbox" onchange='sel_food("蔬菜2")'>"蔬菜2"</label>
+                    <label><input id="紅蘑菇" name="蔬菜" type="checkbox" onchange='sel_food([0,0,0])'>紅蘑菇</label>
+                    <label><input id="綠蘑菇" name="蔬菜" type="checkbox" onchange='sel_food([0,0,1])'>綠蘑菇</label>
 
                 </span>
                 <span id="水果" class="hide">
@@ -87,6 +93,8 @@
                         print_food();
                     </script>
                 </span>
+                
+                
                 
             </p>
 
