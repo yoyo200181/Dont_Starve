@@ -35,7 +35,14 @@ function print_type(){
                             document.write("<br><b>" + food[j].type + "度: "+ food[j].Ingredients[k].weight + "</b><br>");
                             for(var l=0;l<food[j].Ingredients[k].ingre.length;l++){
 
-                                document.write('<label><input id="' + food[j].Ingredients[k].ingre[l].name + '" name="' + type_list[i] + '" type="checkbox" onchange=\'sel_food([' + j +',' + k +',' + l +'])\'>'+ food[j].Ingredients[k].ingre[l].name + '</label>');
+                                document.write('<label><input id="' + food[j].Ingredients[k].ingre[l].name + '" name="' + type_list[i] + '" type="checkbox" onchange=\'sel_food([' + j +',' + k +',' + l +'],' + food[j].Ingredients[k].ingre[l].repeat + ')\'>'+ food[j].Ingredients[k].ingre[l].name + '</label>');
+                            }
+                        }
+
+                        if(food[j].Ingredients[k].ingre_re.length>0){
+                            for(var l=0;l<food[j].Ingredients[k].ingre_re.length;l++){
+
+                                document.write('<label><input id="' + food[j].Ingredients[k].ingre_re[l].name + '_re" name="' + type_list[i] + '" type="checkbox" onchange=\'sel_food([' + j +',' + k +',' + l +'],false)\'>'+ food[j].Ingredients[k].ingre_re[l].name + '</label>');
                             }
                             
     
@@ -43,7 +50,7 @@ function print_type(){
                     }
                 }
 
-            }else if (type_list[i] == "其他" && food[j].show){
+            }else if (type_list[i] == "其他"){
                 for(var k=0; k<food[j].Ingredients.length;k++){
 
                     if(food[j].Ingredients[k].ingre.length>0){
@@ -67,10 +74,27 @@ function print_type(){
 
 
 
-function sel_food(n){
+function sel_food(n,re){
 
-    var foodName = food[n[0]].Ingredients[n[1]].ingre[n[2]].name;
-    if(document.getElementById(foodName).checked){
+    if (re == false || re == true){
+        var foodName = food[n[0]].Ingredients[n[1]].ingre_re[n[2]].name;
+        var food = document.getElementById(foodName+"_re");
+        var food_re = document.getElementById(foodName);
+        var food_index = food[n[0]].Ingredients[n[1]].ingre_re[n[2]].repeat;
+        var loop = null;
+    } else {
+        var foodName = food[n[0]].Ingredients[n[1]].ingre[n[2]].name;
+        var food = document.getElementById(foodName);
+        if (re != null){
+            var food_re = document.getElementById(foodName+"re");
+            var food_index = re;
+            var loop = true;
+        }
+
+    }
+
+
+    if(food.checked){
         
         if(!have_food[n[0]][n[1]].includes(foodName)){
             have_food[n[0]][n[1]].push(foodName);
@@ -83,6 +107,13 @@ function sel_food(n){
         }
     }
 
+    if (re != null && re!=true){
+        food_re.checked = food.checked;
+        food_re.onchange(sel_food(food_index,loop));
+    }
+
+
+    
     
     
 }
