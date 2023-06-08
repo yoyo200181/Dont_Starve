@@ -86,7 +86,7 @@ function sel_food(n,re){
         var foodName = food[n[0]].Ingredients[n[1]].ingre[n[2]].name;
         var food = document.getElementById(foodName);
         if (re != null){
-            var food_re = document.getElementById(foodName+"re");
+            var food_re = document.getElementById(foodName+"_re");
             var food_index = re;
             var loop = true;
         }
