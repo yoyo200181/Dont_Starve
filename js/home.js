@@ -49,6 +49,7 @@ function print_type(){
 
                         }
                     }
+                    break;
                 }
                 
             }else if (type_list[i] == "其他"){
@@ -138,7 +139,7 @@ function print_food(){
     document.getElementById("test").innerHTML += "<br>";
     document.getElementById("test").innerHTML += have_food[2][2];
     document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[3][0];
+    document.getElementById("test").innerHTML += have_food[3][2];
     document.getElementById("test").innerHTML += "<br>";
 }
 

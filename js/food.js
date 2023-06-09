@@ -12,32 +12,32 @@ function getFood() {
                         {
                             index:0,
                             name:"紅蘑菇",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:1,
                             name:"綠蘑菇",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:2,
                             name:"藍蘑菇",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:3,
                             name:"月亮蘑菇",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:4,
                             name:"仙人掌花",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:5,
                             name:"海帶",
-                            repaet:null
+                            repeat:null
                         }
 
                     ],
@@ -51,82 +51,82 @@ function getFood() {
                         {
                             index:0,
                             name:"胡蘿蔔",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:1,
                             name:"番茄",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:2,
                             name:"土豆",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:3,
                             name:"洋蔥",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:4,
                             name:"大蒜",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:5,
                             name:"辣椒",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:6,
                             name:"蘆筍",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:7,
                             name:"南瓜",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:8,
                             name:"玉米",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:9,
                             name:"仙人掌",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:10,
                             name:"曼德拉草",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:11,
                             name:"茄子",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:12,
                             name:"苔蘚",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:13,
                             name:"石果",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:14,
                             name:"爆米花魚",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:15,
                             name:"玉米鱈魚",
-                            repaet:null
+                            repeat:null
                         },
 
                     ],
@@ -147,22 +147,22 @@ function getFood() {
                         {
                             index:0,
                             name:"漿果",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:1,
                             name:"多汁漿果",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:2,
                             name:"小發光漿果",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:3,
                             name:"無花果",
-                            repaet:null
+                            repeat:null
                         }
 
                     ],
@@ -175,32 +175,32 @@ function getFood() {
                         {
                             index:0,
                             name:"石榴",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:1,
                             name:"西瓜",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:2,
                             name:"火龍果",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:3,
                             name:"香蕉",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:4,
                             name:"大發光漿果",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:5,
                             name:"榴槤",
-                            repaet:true
+                            repeat:true
                         }
                     ],
                     ingre_re:[]
@@ -233,32 +233,32 @@ function getFood() {
                         {
                             index:0,
                             name:"小肉",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:1,
                             name:"蛙腿",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:2,
                             name:"雞腿",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:3,
                             name:"蝙蝠翅膀",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:4,
                             name:"裸露鼻孔",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:5,
                             name:"鼴鼠",
-                            repaet:null
+                            repeat:null
                         }
 
                     ],
@@ -321,27 +321,27 @@ function getFood() {
                         {
                             index:0,
                             name:"大肉",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:1,
                             name:"怪物肉",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:2,
                             name:"葉肉",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:3,
                             name:"象鼻",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:4,
                             name:"鳥腿",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -369,7 +369,7 @@ function getFood() {
                         {
                             index:0,
                             name:"藤壺",
-                            repaet:true
+                            repeat:true
                         }
                     ],
                     ingre_re:[]
@@ -382,54 +382,54 @@ function getFood() {
                         {
                             index:0,
                             name:"淡水魚",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:1,
                             name:"小魚塊",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:2,
                             name:"小孔雀魚",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:3,
                             name:"針鼻噴墨魚",
-                            repaet:true
+                            repeat:true
                             
                         },
                         {
                             index:4,
                             name:"小餌魚",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:5,
                             name:"三文魚苗",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:6,
                             name:"落葉比目魚",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:7,
                             name:"花朵金槍魚",
-                            repaet:true
+                            repeat:true
                             
                         },
                         {
                             index:8,
                             name:"熾熱太陽魚",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:9,
                             name:"口水魚",
-                            repaet:true
+                            repeat:true
                         }
 
                     ],
@@ -445,17 +445,17 @@ function getFood() {
                         {
                             index:0,
                             name:"魚",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:1,
                             name:"生魚肉",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:2,
                             name:"生魚肉",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:3,
@@ -465,42 +465,42 @@ function getFood() {
                         {
                             index:4,
                             name:"龍蝦",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:5,
                             name:"泥魚",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:6,
                             name:"班魚",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:7,
                             name:"浮誇獅子魚",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:8,
                             name:"黑鯰魚",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:9,
                             name:"金錦鯉",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:10,
                             name:"冰鯛魚",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:11,
                             name:"甜味魚",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -550,7 +550,7 @@ function getFood() {
                         {
                             index:0,
                             name:"鳥蛋",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -565,7 +565,7 @@ function getFood() {
                         {
                             index:0,
                             name:"高腳鳥蛋",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -589,12 +589,12 @@ function getFood() {
                         {
                             index:0,
                             name:"蜂蜜",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:1,
                             name:"蜂巢",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -609,7 +609,7 @@ function getFood() {
                         {
                             index:0,
                             name:"蜂王漿",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -633,17 +633,17 @@ function getFood() {
                         {
                             index:0,
                             name:"黃油",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:1,
                             name:"電羊奶",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:2,
                             name:"乳白物",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -668,22 +668,22 @@ function getFood() {
                         {
                             index:0,
                             name:"樹枝",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:1,
                             name:"伏特羊角",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:2,
                             name:"噩夢燃料",
-                            repaet:true
+                            repeat:true
                         },
                         {
                             index:3,
                             name:"骨頭碎片",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -707,7 +707,7 @@ function getFood() {
                         {
                             index:0,
                             name:"冰塊",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -736,7 +736,7 @@ function getFood() {
                         {
                             index:0,
                             name:"勿忙我",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -751,17 +751,17 @@ function getFood() {
                         {
                             index:0,
                             name:"蝴蝶翅膀",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:1,
                             name:"月娥翅膀",
-                            repaet:null
+                            repeat:null
                         },
                         {
                             index:2,
                             name:"塵土塊",
-                            repaet:null
+                            repeat:null
                         }
                         
                     ],
@@ -809,7 +809,7 @@ function getFood() {
                         {
                             index:0,
                             name:"樺栗果",
-                            repaet:null
+                            repeat:null
                         }
                     ],
                     ingre_re:[]
