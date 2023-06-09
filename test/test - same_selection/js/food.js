@@ -101,7 +101,7 @@ function getFood() {
                         {
                             index:10,
                             name:"曼德拉草",
-                            repaet:true
+                            repaet:[11,0,0]
                         },
                         {
                             index:11,
@@ -200,7 +200,7 @@ function getFood() {
                         {
                             index:5,
                             name:"榴槤",
-                            repaet:true
+                            repaet:[4,0,1]
                         }
                     ],
                     ingre_re:[]
@@ -220,7 +220,7 @@ function getFood() {
                     ingre_re:[
                         {
                             name:"藤壺",
-                            repeat: false
+                            repeat: [3,0,0]
                         }
                      
                     ]
@@ -267,47 +267,47 @@ function getFood() {
                         
                         {
                             name:"淡水魚",
-                            repeat: false
+                            repeat: [3,1,0]
                         },
                         {
                             name:"小魚塊",
-                            repeat: false
+                            repeat: [3,1,1]
                         },
                         {
                             name:"鰻魚",
-                            repeat: false
+                            repeat: [3,2,3]
                         },
                         {
                             name:"小孔雀魚",
-                            repeat: false
+                            repeat: [3,1,2]
                         },
                         {
                             name:"針鼻噴墨魚",
-                            repeat: false
+                            repeat: [3,1,3]
                         },
                         {
                             name:"小餌魚",
-                            repeat: false
+                            repeat: [3,1,4]
                         },
                         {
                             name:"三文魚苗",
-                            repeat: false
+                            repeat: [3,1,5]
                         },
                         {
                             name:"落葉比目魚",
-                            repeat: false
+                            repeat: [3,1,6]
                         },
                         {
                             name:"花朵金槍魚",
-                            repeat: false
+                            repeat: [3,1,7]
                         },
                         {
                             name:"熾熱太陽魚",
-                            repeat: false
+                            repeat: [3,1,8]
                         },
                         {
                             name:"口水魚",
-                            repeat: false
+                            repeat: [3,1,9]
                         },
 
 
@@ -326,7 +326,7 @@ function getFood() {
                         {
                             index:1,
                             name:"怪物肉",
-                            repaet:true
+                            repaet:[4,0,0]
                         },
                         {
                             index:2,
@@ -349,7 +349,7 @@ function getFood() {
                         
                         {
                             name:"魚",
-                            repeat: false
+                            repeat: [3,2,0]
                         }
                         
                     ]
@@ -369,7 +369,7 @@ function getFood() {
                         {
                             index:0,
                             name:"藤壺",
-                            repaet:true
+                            repaet:[2,0,0]
                         }
                     ],
                     ingre_re:[]
@@ -382,54 +382,54 @@ function getFood() {
                         {
                             index:0,
                             name:"淡水魚",
-                            repaet:true
+                            repaet:[2,1,0]
                         },
                         {
                             index:1,
                             name:"小魚塊",
-                            repaet:true
+                            repaet:[2,1,1]
                         },
                         {
                             index:2,
                             name:"小孔雀魚",
-                            repaet:true
+                            repaet:[2,1,3]
                         },
                         {
                             index:3,
                             name:"針鼻噴墨魚",
-                            repaet:true
+                            repaet:[2,1,4]
                             
                         },
                         {
                             index:4,
                             name:"小餌魚",
-                            repaet:true
+                            repaet:[2,1,5]
                         },
                         {
                             index:5,
                             name:"三文魚苗",
-                            repaet:true
+                            repaet:[2,1,6]
                         },
                         {
                             index:6,
                             name:"落葉比目魚",
-                            repaet:true
+                            repaet:[2,1,7]
                         },
                         {
                             index:7,
                             name:"花朵金槍魚",
-                            repaet:true
+                            repaet:[2,1,8]
                             
                         },
                         {
                             index:8,
                             name:"熾熱太陽魚",
-                            repaet:true
+                            repaet:[2,1,9]
                         },
                         {
                             index:9,
                             name:"口水魚",
-                            repaet:true
+                            repaet:[2,1,10]
                         }
 
                     ],
@@ -445,7 +445,7 @@ function getFood() {
                         {
                             index:0,
                             name:"魚",
-                            repaet:true
+                            repaet:[2,2,0]
                         },
                         {
                             index:1,
@@ -460,7 +460,7 @@ function getFood() {
                         {
                             index:3,
                             name:"鰻魚",
-                            repeat:true
+                            repeat:[2,1,2]
                         },
                         {
                             index:4,
@@ -495,7 +495,7 @@ function getFood() {
                         {
                             index:10,
                             name:"冰鯛魚",
-                            repaet:true
+                            repaet:[9,0,0]
                         },
                         {
                             index:11,
@@ -523,11 +523,11 @@ function getFood() {
  
                         {
                             name:"怪物肉",
-                            repeat: false
+                            repeat: [2,2,1]
                         },
                         {
                             name:"榴槤",
-                            repeat: false
+                            repeat: [1,1,5]
                         }
                         
                     ]
@@ -633,7 +633,7 @@ function getFood() {
                         {
                             index:0,
                             name:"黃油",
-                            repaet:true
+                            repaet:[13,0,0]
                         },
                         {
                             index:1,
@@ -678,7 +678,7 @@ function getFood() {
                         {
                             index:2,
                             name:"噩夢燃料",
-                            repaet:true
+                            repaet:[11,0,1]
                         },
                         {
                             index:3,
@@ -714,7 +714,7 @@ function getFood() {
                     ingre_re:[
                         {
                             name:"冰雕魚",
-                            repeat:false
+                            repeat: [3,2,10]
                         }
                     ]
                     
@@ -784,11 +784,11 @@ function getFood() {
                     ingre_re:[
                         {
                             name:"曼德拉草",
-                            repeat:false
+                            repeat: [0,1,10]
                         },
                         {
                             name:"噩夢燃料",
-                            repeat:false
+                            repeat: [8,0,1]
                         }
                     ]
                     
@@ -831,7 +831,7 @@ function getFood() {
                     ingre_re:[
                         {
                             name:"黃油",
-                            repeat:false
+                            repeat: [7,0,0]
                         }
                     ]
                     
