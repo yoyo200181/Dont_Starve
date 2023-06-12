@@ -177,8 +177,13 @@ function print_recipe(n,chef){
 
 
    if (isEmpty(have_food) || document.getElementById("sel_all").checked==true){
-        for(var i=0;i<47;i++){
-            document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ recipe[i].name + '.jpg" alt="'+ recipe[i].name + '">'+ recipe[i].name + '</td><td>'+ recipe[i].blood + '</td><td>'+ recipe[i].hungry + '</td><td>'+ recipe[i].san + '</td><td>'+ recipe[i].time + '</td><td>'+ recipe[i].life + '</td><td id="longtd">'+ recipe[i].intro + '</td></tr>';
+        for(var i=0;i<79;i++){
+            if(recipe[i].chef){
+                document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ recipe[i].name + '.jpg" alt="'+ recipe[i].name + '"><font id="chefOnly">'+ recipe[i].name + '</font></td><td>'+ recipe[i].blood + '</td><td>'+ recipe[i].hungry + '</td><td>'+ recipe[i].san + '</td><td>'+ recipe[i].time + '</td><td>'+ recipe[i].life + '天</td><td id="longtd">'+ recipe[i].intro + '</td></tr>';
+            }else{
+                document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ recipe[i].name + '.jpg" alt="'+ recipe[i].name + '">'+ recipe[i].name + '</td><td>'+ recipe[i].blood + '</td><td>'+ recipe[i].hungry + '</td><td>'+ recipe[i].san + '</td><td>'+ recipe[i].time + '</td><td>'+ recipe[i].life + '天</td><td id="longtd">'+ recipe[i].intro + '</td></tr>';
+            }
+            
         }
     }
 }

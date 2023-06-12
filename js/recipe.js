@@ -302,7 +302,7 @@ function getRecipe() {
             life:20,
             re_ing:[[5,0,0,null]],
             other_ing:[[2,null,null],[0,null,null]],
-            intro:"鳥度≥1 + 蔬菜度≥0.5 + 肉度≥0.25 + 填充物<br><font>禁忌:</font> 不可食用度、辣椒"
+            intro:"鳥度≥1 + 蔬菜度≥0.5 + 肉度≥0.25 + 填充物<br><font>禁忌:</font> 不可食用度/辣椒"
             
         },
         {
@@ -385,7 +385,7 @@ function getRecipe() {
             life:10,
             re_ing:[[0,1,2,null],[5,0,0,null]],
             other_ing:[],
-            intro:"2土豆 + 1蛋 + 1其他<br><font>禁忌:</font> 肉度、不可食用度"
+            intro:"2土豆 + 1蛋 + 1其他<br><font>禁忌:</font> 肉度/不可食用度"
             
         },
         {
@@ -399,7 +399,7 @@ function getRecipe() {
             life:15,
             re_ing:[[6,0,0,null]],
             other_ing:[[2,null,null]],
-            intro:"蜂蜜 + 肉度≥0.25<br><font>禁忌:</font> 不可食用度、肉>1.5"
+            intro:"蜂蜜 + 肉度≥0.25<br><font>禁忌:</font> 不可食用度/肉>1.5"
             
         },
         {
@@ -441,7 +441,7 @@ function getRecipe() {
             life:10,
             re_ing:[[9,0,0,null]],
             other_ing:[[2,1,[2,0]]],
-            intro:"肉度≥0.5 + 2冰塊<br><font>特效:</font> 食用後5秒增加40溫度<br><font>禁忌:</font> 肉度≥0.75、不可食用度"
+            intro:"肉度≥0.5 + 2冰塊<br><font>特效:</font> 食用後5秒增加40溫度<br><font>禁忌:</font> 肉度≥0.75/不可食用度"
 
         },
         {
@@ -483,7 +483,7 @@ function getRecipe() {
             life:15,
             re_ing:[[0,1,2,null],[0,1,4,null]],
             other_ing:[],
-            intro:"2土豆 + 1大蒜<br><font>禁忌:</font> 肉度、不可食用度"
+            intro:"2土豆 + 1大蒜<br><font>禁忌:</font> 肉度/不可食用度"
 
         },
         {
@@ -511,7 +511,7 @@ function getRecipe() {
             life:15,
             re_ing:[[8,0,0,null]],
             other_ing:[2,null,null],
-            intro:"樹枝 + 肉度≥0.25<br><font>特效:</font> 食用後15秒增加40溫度<br><font>禁忌:</font> 怪物度>1、不可食用度>1"
+            intro:"樹枝 + 肉度≥0.25<br><font>特效:</font> 食用後15秒增加40溫度<br><font>禁忌:</font> 怪物度>1/不可食用度>1"
 
         },
         {
@@ -525,7 +525,7 @@ function getRecipe() {
             life:10,
             re_ing:[[0,1,2,null],[8,0,0,null]],
             other_ing:[],
-            intro:"土豆 + 樹枝<br><font>禁忌:</font> 肉度、怪物度>1、不可食用度>2"
+            intro:"土豆 + 樹枝<br><font>禁忌:</font> 肉度/怪物度>1/不可食用度>2"
 
         },
         {
@@ -567,7 +567,7 @@ function getRecipe() {
             life:8,
             re_ing:[[1,0,2,[[1,1,4]]]],
             other_ing:[],
-            intro:"發光漿果/2小發光漿果 + 水果度≥2<br><font>特效:</font> 人物食用後發光2天<br><font>禁忌:</font> 肉度、不可食用度"
+            intro:"發光漿果/2小發光漿果 + 水果度≥2<br><font>特效:</font> 人物食用後發光2天<br><font>禁忌:</font> 肉度/不可食用度"
 
         },
         {
@@ -651,7 +651,7 @@ function getRecipe() {
             life:10,
             re_ing:[[9,0,0,null]],
             other_ing:[[3,2,null]],
-            intro:"魚度≥2 + 冰<br><font>特效:</font> 食用後10秒降低40溫度<br><font>禁忌:</font> 蛋度、不可食用度"
+            intro:"魚度≥2 + 冰<br><font>特效:</font> 食用後10秒降低40溫度<br><font>禁忌:</font> 蛋度/不可食用度"
 
         },
         {
@@ -669,440 +669,439 @@ function getRecipe() {
 
         },
         {
-            id:0,
-            name:"",
+            id:48,
+            name:"水果聖代",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:25,
+            blood:20,
             san:5,
-            time:32,
-            life:10,
-            re_ing:[],
-            other_ing:[],
-            intro:""
+            time:8,
+            life:6,
+            re_ing:[[8,0,0,null]],
+            other_ing:[[1,1,null]],
+            intro:"水果度≥3 + 樹枝<br><font>特效:</font> 食用後5秒降40溫度"
 
         },
         {
-            id:0,
-            name:"",
+            id:49,
+            name:"蔬菜雞尾酒",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
-            other_ing:[],
-            intro:""
+            hungry:25,
+            blood:3,
+            san:33,
+            time:8,
+            life:15,
+            re_ing:[[0,1,1,[[0,1,6]]],[9,0,0,null]],
+            other_ing:[[0,1,null]],
+            intro:"番茄/蘆筍 + 冰 + 蔬菜度≥2.5"
 
         },
         {
-            id:0,
-            name:"",
-            chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            id:50,
+            name:"蘆筍冷湯",
+            chef:true,
+            hungry:25,
+            blood:3,
+            san:10,
+            time:8,
+            life:15,
+            re_ing:[[0,1,6,null],[9,0,0,null]],
             other_ing:[],
-            intro:""
+            intro:"2蘆筍 + 2冰塊<br><font>特效:</font> 食用後持續5分鐘降溫40"
 
         },
         {
-            id:0,
-            name:"",
+            id:51,
+            name:"蔬菜雜燴",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:25,
+            blood:3,
             san:5,
-            time:32,
-            life:10,
+            time:16,
+            life:15,
             re_ing:[],
-            other_ing:[],
-            intro:""
+            other_ing:[[0,null,null]],
+            intro:"蔬菜度≥0.5<br><font>禁忌:</font> 肉度/不可食用度"
 
         },
         {
-            id:0,
-            name:"",
+            id:52,
+            name:"生鮮薩爾薩醬",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            hungry:25,
+            blood:3,
+            san:33,
+            time:8,
+            life:15,
+            re_ing:[[0,1,1,null],[0,1,3,null]],
             other_ing:[],
-            intro:""
+            intro:"番茄≥1 + 洋蔥≥1<br><font>禁忌:</font> 肉度/蛋度/不可食用度"
 
         },
         {
-            id:0,
-            name:"",
-            chef:false,
-            hungry:0,
-            blood:0,
+            id:53,
+            name:"恐怖國王餅",
+            chef:true,
+            hungry:25,
+            blood:1,
             san:5,
             time:32,
             life:10,
-            re_ing:[],
+            re_ing:[[0,1,2,null],[0,1,3,null],[8,0,2,null]],
             other_ing:[],
-            intro:""
+            intro:"2夢魘燃料 + 洋蔥 + 土豆<br><font>特效:</font> 回復食物基礎值後，對調理智值與生命值"
 
         },
         {
-            id:0,
-            name:"",
+            id:54,
+            name:"蘑菇蛋糕",
             chef:false,
-            hungry:0,
+            hungry:25,
             blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            san:10,
+            time:16,
+            life:15,
+            re_ing:[[0,0,0,null],[0,0,1,null],[0,0,2,null],[0,0,3,null]],
             other_ing:[],
-            intro:""
+            intro:"藍蘑菇+綠蘑菇+紅蘑菇+月亮蘑菇<br><font>特效:</font> 食用後持續8分鐘獲得催眠抗性，由10秒提升至33.3秒<br><font>禁忌:</font> 必須為生蘑菇"
 
         },
         {
-            id:0,
-            name:"",
+            id:55,
+            name:"冰淇淋",
             chef:false,
-            hungry:0,
+            hungry:25,
             blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
-            other_ing:[],
-            intro:""
+            san:50,
+            time:8,
+            life:3,
+            re_ing:[[9,0,0,null]],
+            other_ing:[[6,null,null],[7,null,null]],
+            intro:"奶製品度≥1 + 蜂蜜度≥1 + 冰<br><font>特效:</font> 食用後15秒降低40溫度<br><font>禁忌:</font> 蔬菜度/肉度/蛋度/不可食用度"
 
         },
         {
-            id:0,
-            name:"",
+            id:56,
+            name:"太妃糖",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
+            hungry:25,
+            blood:-3,
+            san:15,
             time:32,
-            life:10,
+            life:15,
             re_ing:[],
-            other_ing:[],
-            intro:""
+            other_ing:[[6,null,null]],
+            intro:"蜂蜜度≥3 + 其他<br><font>禁忌:</font> 肉度"
 
         },
         {
-            id:0,
-            name:"",
-            chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            id:57,
+            name:"辣龍椒沙拉",
+            chef:true,
+            hungry:25,
+            blood:-3,
+            san:10,
+            time:12,
+            life:15,
+            re_ing:[[0,1,5,null],[0,1,2,null]],
             other_ing:[],
-            intro:""
+            intro:"辣椒≥1 + 火龍果≥1 + 其他<br><font>特效:</font> 持續5分鐘增加40溫度<br><font>禁忌:</font> 肉度/蛋度/不可食用度"
 
         },
         {
-            id:0,
-            name:"",
+            id:58,
+            name:"冰香蕉凍唇蜜",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            hungry:18.7,
+            blood:30,
+            san:15,
+            time:20,
+            life:15,
+            re_ing:[[0,1,3,null],[9,0,0,null]],
             other_ing:[],
-            intro:""
+            intro:"香蕉≥1+冰塊≥1<br><font>特效:</font> 食用後15秒降低40溫度<br><font>禁忌:</font> 肉度/魚度"
 
         },
         {
-            id:0,
-            name:"",
+            id:59,
+            name:"蘆筍湯",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:18.7,
+            blood:20,
             san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            time:8,
+            life:15,
+            re_ing:[[0,1,6,null]],
             other_ing:[],
-            intro:""
+            intro:"蘆筍≥1 + 蔬菜≥2.5<br><font>禁忌:</font> 肉度/不可食用度"
 
         },
         {
-            id:0,
-            name:"",
+            id:60,
+            name:"鰻魚料理",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:18.7,
+            blood:20,
             san:5,
-            time:32,
+            time:8,
             life:10,
-            re_ing:[],
+            re_ing:[[0,0,5,[[0,1,12]]],[3,2,3,null]],
             other_ing:[],
-            intro:""
+            intro:"鰻魚≥1 + 海帶≥1"
 
         },
         {
-            id:0,
-            name:"",
+            id:61,
+            name:"無花果蛙腿三明治",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            hungry:18.7,
+            blood:8,
+            san:10,
+            time:16,
+            life:15,
+            re_ing:[[1,0,3,null],[2,1,1,null]],
             other_ing:[],
-            intro:""
+            intro:"蛙腿 + 無花果 + 2其他<br><font>禁忌:</font> 蔬菜度"
 
         },
         {
-            id:0,
-            name:"",
+            id:62,
+            name:"花沙拉",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:12.5,
+            blood:40,
             san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            time:8,
+            life:6,
+            re_ing:[[0,0,4,null]],
             other_ing:[],
-            intro:""
+            intro:"仙人掌花 + 蔬菜度≥2<br><font>禁忌:</font> 水果度/肉度/蛋度/蜂蜜度/不可食用度"
 
         },
         {
-            id:0,
-            name:"",
+            id:63,
+            name:"什錦乾果",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:12.5,
+            blood:30,
             san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            time:8,
+            life:15,
+            re_ing:[[12,0,0,null],[1,0,0,[[1,0,1]]]],
             other_ing:[],
-            intro:""
+            intro:"烤樺樹果≥1 + 漿果/多汁漿果≥1 + 水果度≥1<br><font>禁忌:</font> 蔬菜度/肉度/蛋度/奶制品度"
 
         },
         {
-            id:0,
-            name:"",
+            id:64,
+            name:"香蕉凍",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            hungry:12.5,
+            blood:20,
+            san:33,
+            time:8,
+            life:3,
+            re_ing:[[1,1,3,null],[9,0,0,null],[8,0,0,null]],
             other_ing:[],
-            intro:""
+            intro:"香蕉 + 冰塊 + 樹枝<br><font>特效:</font> 食用後10秒降低40溫度<br><font>禁忌:</font> 肉度/魚度"
 
         },
         {
-            id:0,
-            name:"",
+            id:65,
+            name:"西瓜冰棍",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            hungry:12.5,
+            blood:3,
+            san:20,
+            time:8,
+            life:3,
+            re_ing:[[1,1,1,null],[9,0,0,null],[8,0,0,null]],
             other_ing:[],
-            intro:""
+            intro:"西瓜 + 冰塊 + 樹枝<br><font>特效:</font> 食用後10秒降低40溫度<br><font>禁忌:</font> 蔬菜度/肉度/蛋度"
 
         },
         {
-            id:0,
-            name:"",
+            id:66,
+            name:"琥珀美食",
             chef:false,
-            hungry:0,
+            hungry:12.5,
             blood:0,
-            san:5,
+            san:0,
             time:32,
-            life:10,
-            re_ing:[],
+            life:"不限",
+            re_ing:[[10,1,2,null]],
             other_ing:[],
-            intro:""
+            intro:"塵土塊 + 3其他<br><font>特效:</font> 玩家和豬人不可食用，餵食給塵蛾，使玩家能挖到3個銩礦碎片"
 
         },
         {
-            id:0,
-            name:"",
+            id:67,
+            name:"牛奶帽",
             chef:false,
-            hungry:0,
+            hungry:187.5,
             blood:0,
-            san:5,
+            san:0,
             time:32,
-            life:10,
-            re_ing:[],
-            other_ing:[],
-            intro:""
+            life:"不限",
+            re_ing:[[2,1,4,null],[0,0,5,null]],
+            other_ing:[[7,null,null]],
+            intro:"裸露鼻孔 + 海帶 + 奶製品度≥1<br><font>特效:</font> 每5秘恢復3.9饑餓值"
 
         },
         {
-            id:0,
-            name:"",
+            id:68,
+            name:"舒緩茶",
             chef:false,
             hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
-            other_ing:[],
-            intro:""
+            blood:3,
+            san:15,
+            time:16,
+            life:3,
+            re_ing:[[10,0,0,null],[9,0,0,null]],
+            other_ing:[6,null,null],
+            intro:"勿忘我≥1 + 冰塊≥1 + 峰蜜度≥1<br><font>特效:</font> 食用後5秒增加40溫度<br><font>禁忌:</font> 不可有此3樣外的食物度"
 
         },
         {
-            id:0,
-            name:"",
+            id:69,
+            name:"彩虹糖豆x3",
             chef:false,
             hungry:0,
-            blood:0,
+            blood:122,
             san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            time:40,
+            life:"不限",
+            re_ing:[[6,1,0,null]],
             other_ing:[],
-            intro:""
+            intro:"蜂王漿 + 3其他<br><font>特效:</font> 在2分鐘內每2秒恢復2點血量<br><font>禁忌:</font> 怪物度/不可食用度"
 
         },
         {
-            id:0,
-            name:"",
+            id:70,
+            name:"果凍沙拉",
             chef:false,
-            hungry:0,
+            hungry:37.5,
             blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            san:50,
+            time:40,
+            life:6,
+            re_ing:[[2,2,2,null],[6,0,0,[[6,1,0]]]],
             other_ing:[],
-            intro:""
+            intro:"2葉肉 + 蜂王漿/2蜂蜜"
 
         },
         {
-            id:0,
-            name:"",
+            id:71,
+            name:"曼德拉草湯",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:150,
+            blood:100,
             san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            time:60,
+            life:6,
+            re_ing:[[0,1,10,null]],
             other_ing:[],
-            intro:""
+            intro:"曼德拉草≥1"
 
         },
         {
-            id:0,
-            name:"",
+            id:72,
+            name:"芝士蛋糕",
             chef:false,
             hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            blood:-3,
+            san:0,
+            time:10,
+            life:18750,
+            re_ing:[[0,1,8,[[0,1,14],[0,1,15]]],[6,0,0,null],[8,0,0,null]],
             other_ing:[],
-            intro:""
+            intro:"玉米/爆米花魚/玉米鱈魚≥1 + 蜂蜜≥1 + 樹枝≥1<br><font>特效:</font> 作誘餌吸引火雞/魚人進入尖牙陷阱<br><font>禁忌:</font> 曼德拉草/魚度"
 
         },
         {
-            id:0,
-            name:"",
+            id:73,
+            name:"香蕉奶昔",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
+            hungry:25,
+            blood:8,
+            san:33,
+            time:10,
+            life:15,
+            re_ing:[[1,1,3,null]],
             other_ing:[],
-            intro:""
+            intro:"香蕉≥2<br><font>禁忌:</font> 肉度/魚度/怪物度"
 
         },
         {
-            id:0,
-            name:"",
+            id:74,
+            name:"普通煎蛋",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:50,
+            blood:3,
             san:5,
-            time:32,
+            time:10,
             life:10,
             re_ing:[],
-            other_ing:[],
-            intro:""
+            other_ing:[[5,null,null]],
+            intro:"蛋度≥3"
 
         },
         {
-            id:0,
-            name:"",
+            id:75,
+            name:"早餐鍋",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:37.5,
+            blood:20,
             san:5,
-            time:32,
-            life:10,
-            re_ing:[],
-            other_ing:[],
-            intro:""
+            time:20,
+            life:20,
+            re_ing:[[5,0,0,null]],
+            other_ing:[[0,null,null]],
+            intro:"鳥蛋≥1 + 蔬菜度≥1<br><font>禁忌:</font> 高腳鳥蛋/肉度/奶製品度"
 
         },
         {
-            id:0,
-            name:"",
+            id:76,
+            name:"蘇格蘭高鳥蛋",
             chef:false,
-            hungry:0,
-            blood:0,
+            hungry:150,
+            blood:60,
             san:5,
-            time:32,
-            life:10,
-            re_ing:[],
-            other_ing:[],
-            intro:""
+            time:40,
+            life:15,
+            re_ing:[[5,1,0,null]],
+            other_ing:[[0,null,null]],
+            intro:"高腳鳥蛋≥1 + 蔬菜度≥1"
 
         },
         {
-            id:0,
-            name:"",
+            id:77,
+            name:"蒸樹枝",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
+            hungry:100,
+            blood:15,
+            san:0,
+            time:10,
+            life:20,
             re_ing:[],
-            other_ing:[],
-            intro:""
+            other_ing:[[8,null,null]],
+            intro:"不可食用度=4<br><font>特效:</font> 玩家不可食用，只供牛食用"
 
         },
         {
-            id:0,
-            name:"",
+            id:78,
+            name:"皮弗婁牛零食",
             chef:false,
-            hungry:0,
-            blood:0,
-            san:5,
-            time:32,
-            life:10,
-            re_ing:[],
-            other_ing:[],
-            intro:""
+            hungry:25,
+            blood:75,
+            san:0,
+            time:40,
+            life:20,
+            re_ing:[[10,0,0,null],[12,0,0,null]],
+            other_ing:[8,null,null],
+            intro:"不可食用度≥1 + 樺栗果≥1 + 勿忙我≥1<br><font>特效:</font> 玩家不可食用，只供牛食用<br><font>禁忌:</font> 不可有此3種外的食物度"
 
-        }
-            
+        }           
 
 
 

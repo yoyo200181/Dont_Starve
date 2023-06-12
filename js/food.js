@@ -576,7 +576,7 @@ function getFood() {
         },
 
         {
-            type:"蜂蜜 ",
+            type:"蜜糖",
             type_id:6,
             show:true,
             Ingredients:[

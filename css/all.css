@@ -113,10 +113,16 @@ a:visited{
     text-align: left;
 }
 
+
+
 font{
-    color: red;
+    color: rgb(235, 85, 85);
     font-weight: bold;
 }
 
 
+#chefOnly{
+    color: rgb(77, 117, 226);
+    font-weight:lighter;
+}
 
