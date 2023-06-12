@@ -18,17 +18,24 @@
                 have_food[i].push([]);
             }
         }
-
-        var recipe_hungry_down = recipe.sort(function (a, b) {return a.hungry < b.hungry ? 1 : -1;});
-        var recipe_hungry_up = recipe.sort(function (a, b) {return a.hungry > b.hungry ? 1 : -1;});
-        var recipe_blood_down = recipe.sort(function (a, b) {return a.blood < b.blood ? 1 : -1;});
-        var recipe_blood_up = recipe.sort(function (a, b) {return a.blood > b.blood ? 1 : -1;});
-        var recipe_san_down = recipe.sort(function (a, b) {return a.san < b.san ? 1 : -1;});
-        var recipe_san_up = recipe.sort(function (a, b) {return a.san > b.san ? 1 : -1;});
-        var recipe_time_down = recipe.sort(function (a, b) {return a.time < b.time ? 1 : -1;});
-        var recipe_time_up = recipe.sort(function (a, b) {return a.time > b.time ? 1 : -1;});
-        var recipe_life_down = recipe.sort(function (a, b) {return a.life < b.life ? 1 : -1;});
-        var recipe_life_up = recipe.sort(function (a, b) {return a.life > b.life ? 1 : -1;});
+        var hg = [];
+        var bl = [];
+        var sa = [];
+        var ti = [];
+        var li = [];
+        for (var i=0; i<recipe.length;i++){
+            hg.push(recipe[i]);
+            bl.push(recipe[i]);
+            sa.push(recipe[i]);
+            ti.push(recipe[i]);
+            li.push(recipe[i]);
+        }
+        
+        var recipe_hungry = hg.sort(function (a, b) {return a.hungry > b.hungry ? 1 : -1;});
+        var recipe_blood = bl.sort(function (a, b) {return a.blood > b.blood ? 1 : -1;});
+        var recipe_san = sa.sort(function (a, b) {return a.san > b.san ? 1 : -1;});
+        var recipe_time = ti.sort(function (a, b) {return a.time > b.time ? 1 : -1;});
+        var recipe_life = li.sort(function (a, b) {return a.life > b.life ? 1 : -1;});
     </script>
     <style>
         button{
@@ -80,23 +87,29 @@
                 
                 <br><br>
                 <input type="checkbox" id="sel_all" onclick='sel_all("sel_")'>全選</button>
-                <button onclick='remove_all()'>remove</button>
+                <button onclick='remove_all()'>重設</button>
+                <button id="sure" onclick='print_recipe(null)'>確定</button>
                 <!--<button onclick="print_food()">priint</button>
                 <br>
                 <span id="test">
                     <script type="text/javascript">
                         print_food();
                     </script>
-                </span>-->
-                
+                </span>
+                -->
                 
                 
             </p>
-
+            <br>
+            <p align="left" style="width:87%;">
+                <button class="chef_button" onclick='change_chef(null)'>全部</button>
+                <button class="chef_button" onclick='change_chef(false)'>烹飪鍋食譜</button>
+                <button class="chef_button" onclick='change_chef(true)'><font id="chefOnly">大廚特色菜</font></button>
+            </p>
             <span id="print_rc">
                 <table id="t">
                     <script type="text/javascript">
-                        print_recipe(0,null);
+                        print_recipe(recipe_hungry);
                     </script>
 
                 </table>

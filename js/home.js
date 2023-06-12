@@ -1,5 +1,5 @@
 var type_list = ["蔬菜", "水果", "肉", "海鮮", "蛋", "蜂蜜 ", "奶製品", "其他"];
-
+var need_chef = null;
 function switch_type(n) {
     var target = document.getElementById(n);
     target.classList.toggle("hide");
@@ -124,39 +124,8 @@ function sel_all(n){
 }
 
 function print_food(){
-
-    document.getElementById("test").innerHTML = have_food[3][0];
+    document.getElementById("test").innerHTML = have_food[0][0];
     document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[3][1];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[3][2];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[4][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[5][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[5][1];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[6][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[6][1];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[7][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[8][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[9][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[10][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[10][1];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[11][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[12][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[13][0];
-
 }
 
 function remove_all(){
@@ -164,26 +133,156 @@ function remove_all(){
     checkbox.checked = false;
     checkbox.onchange(sel_all("sel_"));
 
-
 }
 
 function isEmpty(array) {
     return Array.isArray(array) && (array.length == 0 || array.every(isEmpty));
 }
 
-function print_recipe(n,chef){
-    document.getElementById("t").innerHTML = '<tr style="font-weight: bold;"> <td>名稱</td><td onclick="change(0)">生命值</td><td onclick="change(1)">饑餓值</td><td onclick="change(2)">理智值</td><td onclick="change(3)">烹飪時長</td><td onclick="change(4)">保質期</td><th style="width:270px;">介紹</th></tr>';
-
-
-
-   if (isEmpty(have_food) || document.getElementById("sel_all").checked==true){
-        for(var i=0;i<79;i++){
-            if(recipe[i].chef){
-                document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ recipe[i].name + '.jpg" alt="'+ recipe[i].name + '"><font id="chefOnly">'+ recipe[i].name + '</font></td><td>'+ recipe[i].blood + '</td><td>'+ recipe[i].hungry + '</td><td>'+ recipe[i].san + '</td><td>'+ recipe[i].time + '</td><td>'+ recipe[i].life + '天</td><td id="longtd">'+ recipe[i].intro + '</td></tr>';
+function check_includeFood(n, must){
+    if(must){
+        var re_food = food[n[0]].Ingredients[n[1]].ingre[n[2]].name;
+        if(!have_food[n[0]][n[1]].includes(re_food)){
+            if(n.length==3 || n[3]==null){
+                return false;
             }else{
-                document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ recipe[i].name + '.jpg" alt="'+ recipe[i].name + '">'+ recipe[i].name + '</td><td>'+ recipe[i].blood + '</td><td>'+ recipe[i].hungry + '</td><td>'+ recipe[i].san + '</td><td>'+ recipe[i].time + '</td><td>'+ recipe[i].life + '天</td><td id="longtd">'+ recipe[i].intro + '</td></tr>';
+                for(var i=0;i<n[3].length;i++){
+                    if(check_includeFood(n[3][i],true)){
+                        return true;
+                    }
+                }
+                return false;
             }
-            
+        }
+
+        return true;
+
+    }else{
+        var can=true;
+        if(isEmpty(have_food[n[0]])){
+            can=false;
+        }else{
+            if(n[1] != null){
+                if(isEmpty(have_food[n[0]][n[1]])){
+                    can=false;
+                }
+            }
+        }
+
+        if(!can){
+            if(n.length==2 || n[2]==null){
+                return false;
+            }else{
+                return check_includeFood(n[2],false);
+            }
+        }
+        return true;
+
+    }
+    
+}
+
+function check_recipe(n){
+    if(n.re_ing.length>0){
+        for(var i=0;i<n.re_ing.length;i++){
+            if(!check_includeFood(n.re_ing[i],true)){
+                return false;
+            }
         }
     }
+
+    if(n.other_ing.length>0){
+        for(var i=0;i<n.other_ing.length;i++){
+            if(!check_includeFood(n.other_ing[i],false)){
+                return false;
+            }
+        }
+    }
+    
+
+    return true;
+}
+
+function print_recipe(list){
+    if(list!=recipe_hungry){
+        recipe_hungry = hg.sort(function (a, b) {return a.hungry > b.hungry ? 1 : -1;});
+    }
+    if(list!=recipe_blood){
+        recipe_blood = bl.sort(function (a, b) {return a.blood > b.blood ? 1 : -1;});
+    }
+    if(list!=recipe_san){
+        recipe_san = sa.sort(function (a, b) {return a.san > b.san ? 1 : -1;});
+    }
+    if(list!=recipe_time){
+        recipe_time = ti.sort(function (a, b) {return a.time > b.time ? 1 : -1;});
+    }
+    if(list!=recipe_life){
+        recipe_life = li.sort(function (a, b) {return a.life > b.life ? 1 : -1;});
+    }
+    if(list == null){
+        list = recipe_hungry;
+    }
+    list = list.reverse();    
+
+    document.getElementById("t").innerHTML = '<tr style="font-weight: bold;"> <td>名稱</td><td onclick="print_recipe(recipe_blood)">生命值</td><td onclick="print_recipe(recipe_hungry)">饑餓值</td><td onclick="print_recipe(recipe_san);">理智值</td><td onclick="print_recipe(recipe_time);">烹飪時長</td><td onclick="print_recipe(recipe_life);">保質期</td><th style="width:270px;">介紹</th></tr>';
+ 
+
+   if (isEmpty(have_food) || document.getElementById("sel_all").checked==true){
+        if(need_chef == null){
+            for(var i=0;i<list.length;i++){
+                if(list[i].chef){
+                    document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ list[i].name + '.jpg" alt="'+ list[i].name + '"><br><font id="chefOnly">'+ list[i].name + '</font></td><td>'+ list[i].blood + '</td><td>'+ list[i].hungry + '</td><td>'+ list[i].san + '</td><td>'+ list[i].time + '</td><td>'+ list[i].life + '天</td><td id="longtd">'+ list[i].intro + '</td></tr>';
+                }else{
+                    document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ list[i].name + '.jpg" alt="'+ list[i].name + '"><br>'+ list[i].name + '</td><td>'+ list[i].blood + '</td><td>'+ list[i].hungry + '</td><td>'+ list[i].san + '</td><td>'+ list[i].time + '</td><td>'+ list[i].life + '天</td><td id="longtd">'+ list[i].intro + '</td></tr>';
+                }
+            }
+        }else if (need_chef){
+            for(var i=0;i<list.length;i++){
+                if(list[i].chef){
+                    document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ list[i].name + '.jpg" alt="'+ list[i].name + '"><br><font id="chefOnly">'+ list[i].name + '</font></td><td>'+ list[i].blood + '</td><td>'+ list[i].hungry + '</td><td>'+ list[i].san + '</td><td>'+ list[i].time + '</td><td>'+ list[i].life + '天</td><td id="longtd">'+ list[i].intro + '</td></tr>';
+                }
+            }
+        }else{
+            for(var i=0;i<list.length;i++){
+                if(!list[i].chef){
+                    document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ list[i].name + '.jpg" alt="'+ list[i].name + '"><br>'+ list[i].name + '</td><td>'+ list[i].blood + '</td><td>'+ list[i].hungry + '</td><td>'+ list[i].san + '</td><td>'+ list[i].time + '</td><td>'+ list[i].life + '天</td><td id="longtd">'+ list[i].intro + '</td></tr>';
+                }
+            }
+        }       
+    }else{
+
+        if(need_chef == null){
+            for(var i=0;i<list.length;i++){
+                if(check_recipe(list[i])){
+                    if(list[i].chef){
+                        document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ list[i].name + '.jpg" alt="'+ list[i].name + '"><br><font id="chefOnly">'+ list[i].name + '</font></td><td>'+ list[i].blood + '</td><td>'+ list[i].hungry + '</td><td>'+ list[i].san + '</td><td>'+ list[i].time + '</td><td>'+ list[i].life + '天</td><td id="longtd">'+ list[i].intro + '</td></tr>';
+                    }else{
+                        document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ list[i].name + '.jpg" alt="'+ list[i].name + '"><br>'+ list[i].name + '</td><td>'+ list[i].blood + '</td><td>'+ list[i].hungry + '</td><td>'+ list[i].san + '</td><td>'+ list[i].time + '</td><td>'+ list[i].life + '天</td><td id="longtd">'+ list[i].intro + '</td></tr>';
+                    }
+                }
+            }
+        }else if (need_chef){
+            for(var i=0;i<list.length;i++){
+                if(check_recipe(list[i])){
+                    if(list[i].chef){
+                        document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ list[i].name + '.jpg" alt="'+ list[i].name + '"><br><font id="chefOnly">'+ list[i].name + '</font></td><td>'+ list[i].blood + '</td><td>'+ list[i].hungry + '</td><td>'+ list[i].san + '</td><td>'+ list[i].time + '</td><td>'+ list[i].life + '天</td><td id="longtd">'+ list[i].intro + '</td></tr>';
+                    }
+                }
+            }
+        }else{
+            for(var i=0;i<list.length;i++){
+                if(check_recipe(list[i])){
+                    if(!list[i].chef){
+                        document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ list[i].name + '.jpg" alt="'+ list[i].name + '"><br>'+ list[i].name + '</td><td>'+ list[i].blood + '</td><td>'+ list[i].hungry + '</td><td>'+ list[i].san + '</td><td>'+ list[i].time + '</td><td>'+ list[i].life + '天</td><td id="longtd">'+ list[i].intro + '</td></tr>';
+                    }
+                }
+            }
+        } 
+
+    }
+
+}
+
+function change_chef(n){
+    need_chef = n;
 }
