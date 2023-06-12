@@ -93,3 +93,30 @@ a:visited{
     background-color: rgb(141, 104, 69);
 }
 
+
+#t {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+
+#t td{
+    width:80px;
+    border: 1px solid;
+}
+
+#longtd {
+    width:240px;
+    border: 1px solid;
+    text-align: left;
+}
+
+font{
+    color: red;
+    font-weight: bold;
+}
+
+
+

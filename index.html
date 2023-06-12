@@ -71,31 +71,26 @@
                 <br><br>
                 <input type="checkbox" id="sel_all" onclick='sel_all("sel_")'>全選</button>
                 <button onclick='remove_all()'>remove</button>
-                <button onclick="print_food()">priint</button>
+                <!--<button onclick="print_food()">priint</button>
                 <br>
                 <span id="test">
                     <script type="text/javascript">
                         print_food();
                     </script>
-                </span>
+                </span>-->
                 
                 
                 
             </p>
 
-            <span>
+            <span id="print_rc">
                 <table id="t">
-                    <tr>
-                        <th>名稱</th>
-                        <th onclick="change(0)">生命值</th>
-                        <th onclick="change(1)">饑餓值</th>
-                        <th onclick="change(2)">理智值</th>
-                        <th onclick="change(3)">烹飪時長</th>
-                        <th onclick="change(4)">保質期</th>
-                        <th>介紹</th>
-                    </tr>
-                    
+                    <script type="text/javascript">
+                        print_recipe(0,null);
+                    </script>
+
                 </table>
+                
             </span>
             
             <span>

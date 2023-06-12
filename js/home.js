@@ -1,4 +1,4 @@
-var type_list = ["蔬菜", "水果", "肉", "海鮮", "蛋", "蜂蜜", "奶製品", "其他"];
+var type_list = ["蔬菜", "水果", "肉", "海鮮", "蛋", "蜂蜜 ", "奶製品", "其他"];
 
 function switch_type(n) {
     var target = document.getElementById(n);
@@ -61,7 +61,7 @@ function print_type(){
                         for(var l=0;l<food[j].Ingredients[k].ingre.length;l++){
                             document.write('<label><input id="' + food[j].Ingredients[k].ingre[l].name + '" name="' + type_list[i] + '" type="checkbox" onchange="sel_food([' + j +',' + k +',' + l +'],' + food[j].Ingredients[k].ingre[l].repeat + ')">'+ food[j].Ingredients[k].ingre[l].name + '</label>');
                         }
-
+                        
                     }
 
                     if(food[j].Ingredients[k].ingre_re.length>0){
@@ -71,7 +71,7 @@ function print_type(){
                         }
 
                     }
-                }      
+                }     
             }
         }
         document.write('</span>');
@@ -125,22 +125,38 @@ function sel_all(n){
 
 function print_food(){
 
-    document.getElementById("test").innerHTML = have_food[0][0];
+    document.getElementById("test").innerHTML = have_food[3][0];
     document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[0][1];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[1][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[1][1];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[2][0];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[2][1];
-    document.getElementById("test").innerHTML += "<br>";
-    document.getElementById("test").innerHTML += have_food[2][2];
+    document.getElementById("test").innerHTML += have_food[3][1];
     document.getElementById("test").innerHTML += "<br>";
     document.getElementById("test").innerHTML += have_food[3][2];
     document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[4][0];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[5][0];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[5][1];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[6][0];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[6][1];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[7][0];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[8][0];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[9][0];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[10][0];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[10][1];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[11][0];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[12][0];
+    document.getElementById("test").innerHTML += "<br>";
+    document.getElementById("test").innerHTML += have_food[13][0];
+
 }
 
 function remove_all(){
@@ -153,4 +169,16 @@ function remove_all(){
 
 function isEmpty(array) {
     return Array.isArray(array) && (array.length == 0 || array.every(isEmpty));
+}
+
+function print_recipe(n,chef){
+    document.getElementById("t").innerHTML = '<tr style="font-weight: bold;"> <td>名稱</td><td onclick="change(0)">生命值</td><td onclick="change(1)">饑餓值</td><td onclick="change(2)">理智值</td><td onclick="change(3)">烹飪時長</td><td onclick="change(4)">保質期</td><th style="width:270px;">介紹</th></tr>';
+
+
+
+   if (isEmpty(have_food) || document.getElementById("sel_all").checked==true){
+        for(var i=0;i<47;i++){
+            document.getElementById("t").innerHTML += '<tr> <td><img src="images/recipe/'+ recipe[i].name + '.jpg" alt="'+ recipe[i].name + '">'+ recipe[i].name + '</td><td>'+ recipe[i].blood + '</td><td>'+ recipe[i].hungry + '</td><td>'+ recipe[i].san + '</td><td>'+ recipe[i].time + '</td><td>'+ recipe[i].life + '</td><td id="longtd">'+ recipe[i].intro + '</td></tr>';
+        }
+    }
 }

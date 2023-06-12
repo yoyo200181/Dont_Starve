@@ -516,7 +516,7 @@ function getFood() {
             Ingredients:[
                 
                 {
-                    id:6,
+                    id:0,
                     weight:1,
                     ingre:[],
                     ingre_re:[
@@ -576,7 +576,7 @@ function getFood() {
         },
 
         {
-            type:"蜂蜜",
+            type:"蜂蜜 ",
             type_id:6,
             show:true,
             Ingredients:[
@@ -585,7 +585,6 @@ function getFood() {
                     id:0,
                     weight:1,
                     ingre:[
- 
                         {
                             index:0,
                             name:"蜂蜜",
@@ -713,7 +712,7 @@ function getFood() {
                     ],
                     ingre_re:[
                         {
-                            name:"冰雕魚",
+                            name:"冰鯛魚",
                             repeat:false
                         }
                     ]
