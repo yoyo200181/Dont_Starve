@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="js/recipe.js"></script>
+    <script type="text/javascript">
+        var recipe=getRecipe();
+        var fd = recipe.sort(function (a, b) {
+                                return a.hungry < b.hungry ? 1 : -1;
+                            });
+        var fd1 = fd.reverse();
+    </script>
+    
+    <title>Test</title>
+</head>
+
+<body id="index">
+
+
+    <main>
+        <div align="center">
+            <script>
+                printt();
+            </script>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+    </main>
+
+
+</body>
+</html>

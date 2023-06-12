@@ -19,6 +19,16 @@
             }
         }
 
+        var recipe_hungry_down = recipe.sort(function (a, b) {return a.hungry < b.hungry ? 1 : -1;});
+        var recipe_hungry_up = recipe.sort(function (a, b) {return a.hungry > b.hungry ? 1 : -1;});
+        var recipe_blood_down = recipe.sort(function (a, b) {return a.blood < b.blood ? 1 : -1;});
+        var recipe_blood_up = recipe.sort(function (a, b) {return a.blood > b.blood ? 1 : -1;});
+        var recipe_san_down = recipe.sort(function (a, b) {return a.san < b.san ? 1 : -1;});
+        var recipe_san_up = recipe.sort(function (a, b) {return a.san > b.san ? 1 : -1;});
+        var recipe_time_down = recipe.sort(function (a, b) {return a.time < b.time ? 1 : -1;});
+        var recipe_time_up = recipe.sort(function (a, b) {return a.time > b.time ? 1 : -1;});
+        var recipe_life_down = recipe.sort(function (a, b) {return a.life < b.life ? 1 : -1;});
+        var recipe_life_up = recipe.sort(function (a, b) {return a.life > b.life ? 1 : -1;});
     </script>
     <style>
         button{
