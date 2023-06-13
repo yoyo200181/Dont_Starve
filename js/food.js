@@ -337,11 +337,6 @@ function getFood() {
                             index:3,
                             name:"象鼻",
                             repeat:null
-                        },
-                        {
-                            index:4,
-                            name:"鳥腿",
-                            repeat:null
                         }
                         
                     ],
@@ -349,6 +344,10 @@ function getFood() {
                         
                         {
                             name:"魚",
+                            repeat: false
+                        },
+                        {
+                            name:"龍蝦",
                             repeat: false
                         }
                         
@@ -454,7 +453,7 @@ function getFood() {
                         },
                         {
                             index:2,
-                            name:"生魚肉",
+                            name:"甜味魚",
                             repeat:null
                         },
                         {
@@ -465,7 +464,7 @@ function getFood() {
                         {
                             index:4,
                             name:"龍蝦",
-                            repeat:null
+                            repeat:true
                         },
                         {
                             index:5,
@@ -496,11 +495,6 @@ function getFood() {
                             index:10,
                             name:"冰鯛魚",
                             repeat:true
-                        },
-                        {
-                            index:11,
-                            name:"甜味魚",
-                            repeat:null
                         }
                         
                     ],
@@ -576,7 +570,7 @@ function getFood() {
         },
 
         {
-            type:"蜜糖",
+            type:"蜂蜜 ",
             type_id:6,
             show:true,
             Ingredients:[

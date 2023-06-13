@@ -203,7 +203,7 @@ function getRecipe() {
             time:32,
             life:6,
             re_ing:[[1,0,3,null]],
-            other_ing:[[2,0,null]],
+            other_ing:[[0,1,null]],
             intro:"無花果 + 菜度≥2<br><font>特效:</font> 迅速<br><font>禁忌:</font> 肉度"
             
         },
@@ -216,9 +216,9 @@ function getRecipe() {
             san:5,
             time:32,
             life:20,
-            re_ing:[[7,0,0,null],[5,0,0,null],[1,1,0,null]],
+            re_ing:[[7,0,0,null],[5,0,0,null],[1,0,0,[[1,0,1]]]],
             other_ing:[],
-            intro:"黃油 + 蛋 + 漿果 + 其他"
+            intro:"黃油 + 蛋 + 漿果/多汁漿果 + 其他"
             
         },
         {
@@ -287,8 +287,8 @@ function getRecipe() {
             time:32,
             life:10,
             re_ing:[[8,0,0,null]],
-            other_ing:[[3,null,null],[0,null,null]],
-            intro:"魚 + 樹枝 + 2其他"
+            other_ing:[[3,null,null]],
+            intro:"魚度≥0.5 + 樹枝 + 2其他"
             
         },
         {
@@ -302,7 +302,7 @@ function getRecipe() {
             life:20,
             re_ing:[[5,0,0,null]],
             other_ing:[[2,null,null],[0,null,null]],
-            intro:"鳥度≥1 + 蔬菜度≥0.5 + 肉度≥0.25 + 填充物<br><font>禁忌:</font> 不可食用度/辣椒"
+            intro:"鳥蛋≥1 + 蔬菜度≥0.5 + 肉度≥0.25 + 填充物<br><font>禁忌:</font> 不可食用度/辣椒"
             
         },
         {
@@ -664,7 +664,7 @@ function getRecipe() {
             time:16,
             life:15,
             re_ing:[[1,0,3,null],[8,0,0,null]],
-            other_ing:[],
+            other_ing:[[2,1,[2,2]]],
             intro:"無花果 + 樹枝≥1 + 肉度≥1"
 
         },
@@ -803,7 +803,7 @@ function getRecipe() {
             san:10,
             time:12,
             life:15,
-            re_ing:[[0,1,5,null],[0,1,2,null]],
+            re_ing:[[0,1,5,null],[1,1,2,null]],
             other_ing:[],
             intro:"辣椒≥1 + 火龍果≥1 + 其他<br><font>特效:</font> 持續5分鐘增加40溫度<br><font>禁忌:</font> 肉度/蛋度/不可食用度"
 
