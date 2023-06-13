@@ -1,5 +1,7 @@
 var type_list = ["蔬菜", "水果", "肉", "海鮮", "蛋", "蜂蜜 ", "奶製品", "其他"];
 var need_chef = null;
+var change_now = true;
+var change_now_all=true;
 function switch_type(n) {
     var target = document.getElementById(n);
     target.classList.toggle("hide");
@@ -111,16 +113,33 @@ function sel_food(n,re){
         food_re.checked = food_.checked;
         food_re.onchange();
     }
+    if(change_now){
+        document.getElementById("sure").click();
+    }
     
 }
 
 function sel_all(n){
+    if(n=="sel_"){
+        change_now_all=false;
+    }
+    if(change_now){
+        change_now = false;
+    }
     var checkboxes = document.getElementsByName(n);
     var result = document.getElementById(n+"all")
     for (var checkbox of checkboxes){
         checkbox.checked = result.checked;
         checkbox.onchange();
     }
+    document.getElementById("sure").click();
+    if(n=="sel_"){
+        change_now_all=true;
+    }
+    if(change_now_all){
+        change_now = true;
+    }
+    
 }
 
 function print_food(){
@@ -132,6 +151,7 @@ function remove_all(){
     var checkbox = document.getElementById("sel_all");
     checkbox.checked = false;
     checkbox.onchange(sel_all("sel_"));
+    
 
 }
 
@@ -285,4 +305,5 @@ function print_recipe(list){
 
 function change_chef(n){
     need_chef = n;
+    document.getElementById("sure").click();
 }
